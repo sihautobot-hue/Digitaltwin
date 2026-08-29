@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --scada-bg: #121212;
+  --scada-card: #1E1E1E;
+  --scada-border: #2A2A2A;
+}
+
+body {
+  background-color: #121212;
+  color: #E4E4E7;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Monospace font class for telemetry, numbers, coords, logs */
+.font-scada-mono {
+  font-family: 'JetBrains Mono', 'Roboto Mono', Consolas, monospace;
+}
+
+/* Custom SCADA Grid Background & Scanlines */
+.scada-grid-bg {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
+.scada-blueprint-bg {
+  background-size: 20px 20px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 229, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 229, 255, 0.04) 1px, transparent 1px);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #141414;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2C2C2E;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3A3A3C;
+}
+
+/* Glowing Neon Elements */
+.glow-green {
+  box-shadow: 0 0 12px rgba(34, 197, 94, 0.25);
+}
+
+.glow-yellow {
+  box-shadow: 0 0 12px rgba(234, 179, 8, 0.25);
+}
+
+.glow-red {
+  box-shadow: 0 0 14px rgba(239, 68, 68, 0.35);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 14px rgba(0, 229, 255, 0.25);
+}
+
+/* LED Blinkers */
+@keyframes scada-blink-red {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
+
+.animate-scada-blink-red {
+  animation: scada-blink-red 1s infinite cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+@keyframes scada-pulse-green {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.08); opacity: 0.8; }
+}
+
+.animate-pulse-green {
+  animation: scada-pulse-green 2s infinite ease-in-out;
+}
+
+/* Print Optimization for Reports */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+  
+  .print-only {
+    display: block !important;
+  }
+  
+  .scada-card, .bg-\[\#1E1E1E\], .bg-\[\#181818\] {
+    background-color: #ffffff !important;
+    border: 1px solid #cccccc !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+  }
+
+  .text-white, .text-zinc-100, .text-zinc-200, .text-zinc-300 {
+    color: #111111 !important;
+  }
+
+  .text-zinc-400, .text-zinc-500 {
+    color: #444444 !important;
+  }
+}
