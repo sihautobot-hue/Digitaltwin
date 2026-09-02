@@ -17,7 +17,9 @@ import {
   Shield,
   Radio,
   Compass,
-  AlertOctagon
+  Lock,
+  ShieldCheck,
+  Building2
 } from 'lucide-react';
 
 const NAV_ITEMS = [
@@ -31,11 +33,12 @@ const NAV_ITEMS = [
   { path: '/prediction', label: 'AI Forecast Twin', icon: TrendingUp, badge: 'AI' },
   { path: '/reports', label: 'SITREP & Export', icon: FileText },
   { path: '/settings', label: 'System & Sync', icon: Settings },
+  { path: '/admin', label: 'Admin Console', icon: ShieldCheck, badge: 'RBAC', adminOnly: true },
 ];
 
 export const Sidebar = () => {
   const [collapsed, setCollapsed] = useState(false);
-  const { stationData } = useStationData();
+  const { stationData, activeStation, userRole, rbac } = useStationData();
 
   const unackCriticalCount = stationData?.alerts?.filter(
     a => a.severity === 'CRITICAL' && !a.acknowledged
@@ -43,23 +46,35 @@ export const Sidebar = () => {
 
   const totalUnack = stationData?.alerts?.filter(a => !a.acknowledged).length || 0;
 
+  const brandName = activeStation === 'maitri' ? 'MAITRI-TWIN' : 'BHARATI-TWIN';
+  const stationCode = activeStation === 'maitri' ? 'SIH26060-MTR' : 'SIH26060-BHR';
+
   return (
     <aside
-      className={`relative z-40 bg-[#161616] border-r border-[#262626] transition-all duration-300 flex flex-col flex-shrink-0 ${collapsed ? 'w-20' : 'w-64'
-        }`}
+      className={`relative z-40 bg-[#161616] dark:bg-[#161616] border-r border-[#262626] dark:border-[#262626] transition-all duration-300 flex flex-col flex-shrink-0 text-zinc-100 ${
+        collapsed ? 'w-20' : 'w-64'
+      }`}
     >
       {/* Station Brand Header */}
       <div className="h-16 border-b border-[#262626] px-4 flex items-center justify-between bg-[#141414]">
         {!collapsed ? (
           <div className="flex items-center gap-3 overflow-hidden">
-            <div className="w-9 h-9 rounded-md bg-gradient-to-br from-cyan-500/20 to-blue-600/30 border border-cyan-500/40 flex items-center justify-center text-cyan-400 flex-shrink-0">
+            <div className={`w-9 h-9 rounded-md flex items-center justify-center flex-shrink-0 border ${
+              activeStation === 'maitri'
+                ? 'bg-gradient-to-br from-amber-500/20 to-orange-600/30 border-amber-500/40 text-amber-400'
+                : 'bg-gradient-to-br from-cyan-500/20 to-blue-600/30 border-cyan-500/40 text-cyan-400'
+            }`}>
               <Compass className="w-5 h-5 animate-pulse-slow" />
             </div>
             <div className="truncate">
               <div className="flex items-center gap-1.5">
-                <span className="font-extrabold text-sm text-white tracking-wide">BHARATI-TWIN</span>
-                <span className="text-[10px] font-scada-mono px-1 rounded bg-cyan-950 text-cyan-400 border border-cyan-800">
-                  {stationData?.station?.code || 'SIH26060'}
+                <span className="font-extrabold text-sm text-white tracking-wide">{brandName}</span>
+                <span className={`text-[10px] font-scada-mono px-1 rounded border ${
+                  activeStation === 'maitri'
+                    ? 'bg-amber-950/60 text-amber-400 border-amber-800'
+                    : 'bg-cyan-950/60 text-cyan-400 border-cyan-800'
+                }`}>
+                  {activeStation === 'maitri' ? 'MTR' : 'BHR'}
                 </span>
               </div>
               <p className="text-[10px] font-scada-mono text-zinc-400 truncate">
@@ -68,7 +83,11 @@ export const Sidebar = () => {
             </div>
           </div>
         ) : (
-          <div className="mx-auto w-9 h-9 rounded-md bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
+          <div className={`mx-auto w-9 h-9 rounded-md flex items-center justify-center border ${
+            activeStation === 'maitri'
+              ? 'bg-amber-500/10 border-amber-500/30 text-amber-400'
+              : 'bg-cyan-500/10 border-cyan-500/30 text-cyan-400'
+          }`}>
             <Compass className="w-5 h-5" />
           </div>
         )}
@@ -86,72 +105,115 @@ export const Sidebar = () => {
       <nav className="flex-1 overflow-y-auto p-3 space-y-1.5">
         {NAV_ITEMS.map(item => {
           const Icon = item.icon;
+          const isAdminRoute = item.adminOnly;
+          const isLockedForRole = isAdminRoute && !rbac.canAccessAdmin;
 
           return (
             <NavLink
               key={item.path}
               to={item.path}
               className={({ isActive }) =>
-                `flex items-center gap-3 px-3 py-2.5 rounded-lg text-xs font-medium transition-all ${isActive
-                  ? 'bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 font-semibold shadow-scada-glow'
-                  : 'text-zinc-400 hover:text-zinc-200 hover:bg-[#1E1E1E] border border-transparent'
+                `flex items-center gap-3 px-3 py-2.5 rounded-lg text-xs font-medium transition-all ${
+                  isActive
+                    ? 'bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 font-semibold shadow-scada-glow'
+                    : isLockedForRole
+                    ? 'text-zinc-500 hover:text-zinc-400 hover:bg-[#1A1A1A] border border-transparent opacity-80'
+                    : 'text-zinc-400 hover:text-zinc-200 hover:bg-[#1E1E1E] border border-transparent'
                 }`
               }
               title={collapsed ? item.label : undefined}
             >
-              <Icon className="w-4 h-4 flex-shrink-0" />
-
+              <Icon className={`w-4 h-4 flex-shrink-0 ${
+                isAdminRoute ? (rbac.canAccessAdmin ? 'text-purple-400' : 'text-zinc-500') : ''
+              }`} />
+              
               {!collapsed && (
-                <div className="flex-1 flex items-center justify-between truncate">
-                  <span className="truncate">{item.label}</span>
+                <span className="flex-1 truncate font-sans">
+                  {item.label}
+                </span>
+              )}
 
-                  {item.showUnackAlertCount && totalUnack > 0 && (
-                    <span
-                      className={`text-[10px] font-scada-mono font-bold px-1.5 py-0.5 rounded-full ${unackCriticalCount > 0
-                          ? 'bg-red-500/20 text-red-400 border border-red-500/40 animate-pulse'
-                          : 'bg-yellow-500/20 text-yellow-400 border border-yellow-500/40'
-                        }`}
-                    >
-                      {totalUnack}
-                    </span>
-                  )}
+              {/* Unacknowledged Alerts Count */}
+              {!collapsed && item.showUnackAlertCount && totalUnack > 0 && (
+                <span
+                  className={`px-1.5 py-0.5 rounded text-[10px] font-scada-mono font-bold ${
+                    unackCriticalCount > 0
+                      ? 'bg-red-500/20 text-red-400 border border-red-500/40 animate-pulse'
+                      : 'bg-yellow-500/20 text-yellow-400 border border-yellow-500/40'
+                  }`}
+                >
+                  {totalUnack}
+                </span>
+              )}
 
-                  {item.badge && (
-                    <span className="text-[9px] font-scada-mono px-1 py-0.2 rounded bg-cyan-950/60 text-cyan-300 border border-cyan-800">
-                      {item.badge}
-                    </span>
-                  )}
-                </div>
+              {/* Admin Lock / Unlock Badge */}
+              {!collapsed && isAdminRoute && (
+                <span className={`text-[9px] font-scada-mono px-1.5 py-0.5 rounded border flex items-center gap-1 ${
+                  rbac.canAccessAdmin
+                    ? 'bg-purple-950/60 text-purple-300 border-purple-800'
+                    : 'bg-zinc-800 text-zinc-400 border-zinc-700'
+                }`}>
+                  {rbac.canAccessAdmin ? <ShieldCheck className="w-2.5 h-2.5" /> : <Lock className="w-2.5 h-2.5" />}
+                  {item.badge}
+                </span>
+              )}
+
+              {/* Standard Badges */}
+              {!collapsed && item.badge && !isAdminRoute && (
+                <span className="text-[9px] font-scada-mono px-1.5 py-0.5 rounded bg-[#2A2A2A] text-zinc-300 border border-[#3A3A3A]">
+                  {item.badge}
+                </span>
               )}
             </NavLink>
           );
         })}
       </nav>
 
-      {/* Station Vital Indicator Footer */}
-      {!collapsed ? (
-        <div className="p-3 border-t border-[#262626] bg-[#141414] text-[11px] font-scada-mono space-y-2">
-          <div className="flex items-center justify-between text-zinc-400">
-            <span className="flex items-center gap-1.5">
-              <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse-green" />
-              STATION STATUS
+      {/* Footer Station Health & Telemetry Status Card */}
+      {!collapsed && (
+        <div className="p-3 border-t border-[#262626] bg-[#141414] space-y-2">
+          {/* Active Station Mode */}
+          <div className="flex items-center justify-between text-[11px] font-scada-mono">
+            <span className="text-zinc-500">STATION:</span>
+            <span className={`font-bold flex items-center gap-1 ${
+              activeStation === 'maitri' ? 'text-amber-400' : 'text-cyan-400'
+            }`}>
+              <span className={`w-1.5 h-1.5 rounded-full ${
+                activeStation === 'maitri' ? 'bg-amber-400' : 'bg-cyan-400'
+              } animate-pulse`} />
+              {activeStation === 'maitri' ? 'MAITRI' : 'BHARATI'}
             </span>
-            <span className="text-green-400 font-bold">NOMINAL</span>
           </div>
 
-          <div className="flex items-center justify-between text-zinc-500 text-[10px]">
-            <span>POLAR CYCLE</span>
-            <span className="text-zinc-300">POLAR NIGHT</span>
+          {/* User Role Pill */}
+          <div className="flex items-center justify-between text-[11px] font-scada-mono">
+            <span className="text-zinc-500">ROLE:</span>
+            <span className={`font-bold text-[10px] ${
+              userRole === 'ANTARCTICA_EDGE'
+                ? 'text-emerald-400'
+                : userRole === 'INDIA_COMMAND'
+                ? 'text-blue-400'
+                : 'text-purple-400'
+            }`}>
+              {userRole === 'ANTARCTICA_EDGE' ? 'EDGE COMMANDER' : userRole === 'INDIA_COMMAND' ? 'INDIA HQ DIRECT' : 'SYSTEM ADMIN'}
+            </span>
           </div>
 
-          <div className="flex items-center justify-between text-zinc-500 text-[10px]">
-            <span>COORDINATES</span>
-            <span className="text-cyan-400">69°S, 76°E</span>
+          {/* Sync Mode */}
+          <div className="flex items-center justify-between text-[11px] font-scada-mono">
+            <span className="text-zinc-500">SAT FEED:</span>
+            <span className="text-zinc-300">
+              {rbac.isDelayedFeed ? '12m Mirror' : 'Real-Time Edge'}
+            </span>
           </div>
-        </div>
-      ) : (
-        <div className="p-2 border-t border-[#262626] bg-[#141414] flex justify-center">
-          <span className="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse-green" title="Station Nominal" />
+
+          {/* Offline Cache Indicator */}
+          <div className="p-2 rounded bg-[#1C1C1E] border border-[#2C2C2E] flex items-center gap-2">
+            <div className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
+            <span className="text-[10px] font-scada-mono text-cyan-300">
+              OFFLINE CACHE ACTIVE
+            </span>
+          </div>
         </div>
       )}
     </aside>

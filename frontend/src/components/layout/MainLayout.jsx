@@ -10,7 +10,7 @@ export const MainLayout = () => {
   const isLockdown = stationData?.station?.lockdownActive;
 
   return (
-    <div className="flex h-screen w-screen overflow-hidden bg-[#121212] text-zinc-100 scada-grid-bg">
+    <div className="flex h-screen w-screen overflow-hidden bg-slate-50 dark:bg-[#121212] text-slate-900 dark:text-zinc-100 scada-grid-bg transition-colors">
       {/* Left Navigation Sidebar */}
       <Sidebar />
 

@@ -19,27 +19,27 @@ export const MetricCard = ({
 }) => {
   const normalized = String(status || '').toUpperCase();
 
-  let borderGlow = 'border-[#2A2A2A] hover:border-cyan-500/40';
+  let borderGlow = 'border-slate-200 dark:border-[#2A2A2A] hover:border-cyan-500/40';
   let accentBar = 'bg-cyan-500';
-  let valueColor = 'text-white';
+  let valueColor = 'text-slate-900 dark:text-white';
 
   if (normalized === 'NORMAL' || normalized === 'ACTIVE' || normalized === 'ONLINE') {
-    borderGlow = 'border-[#2A2A2A] hover:border-green-500/50';
+    borderGlow = 'border-slate-200 dark:border-[#2A2A2A] hover:border-green-500/50';
     accentBar = 'bg-green-500';
   } else if (normalized === 'WARNING' || normalized === 'STANDBY' || normalized === 'DELAYED') {
-    borderGlow = 'border-[#2A2A2A] hover:border-yellow-500/50';
+    borderGlow = 'border-slate-200 dark:border-[#2A2A2A] hover:border-yellow-500/50';
     accentBar = 'bg-yellow-500';
   } else if (normalized === 'CRITICAL' || normalized === 'OFFLINE' || normalized === 'ALARM') {
-    borderGlow = 'border-[#2A2A2A] hover:border-red-500/60 shadow-scada-red';
+    borderGlow = 'border-red-200 dark:border-[#2A2A2A] hover:border-red-500/60 shadow-scada-red';
     accentBar = 'bg-red-500';
-    valueColor = 'text-red-400';
+    valueColor = 'text-red-600 dark:text-red-400';
   }
 
   return (
     <div
       onClick={onClick}
-      className={`relative overflow-hidden rounded-lg bg-[#1E1E1E] border ${borderGlow} p-4 transition-all duration-200 ${
-        onClick ? 'cursor-pointer hover:bg-[#232323]' : ''
+      className={`relative overflow-hidden rounded-xl bg-white dark:bg-[#1E1E1E] border ${borderGlow} p-4 shadow-sm transition-all duration-200 ${
+        onClick ? 'cursor-pointer hover:bg-slate-50 dark:hover:bg-[#232323]' : ''
       } ${className}`}
     >
       {/* Top Accent Line */}
@@ -49,11 +49,11 @@ export const MetricCard = ({
       <div className="flex items-center justify-between gap-2 mb-2">
         <div className="flex items-center gap-2">
           {Icon && (
-            <div className="p-1.5 rounded bg-[#141414] border border-[#2A2A2A] text-zinc-300">
+            <div className="p-1.5 rounded-lg bg-slate-100 dark:bg-[#141414] border border-slate-200 dark:border-[#2A2A2A] text-slate-600 dark:text-zinc-300">
               <Icon className="w-4 h-4" />
             </div>
           )}
-          <span className="text-xs font-semibold uppercase tracking-wider text-zinc-400">
+          <span className="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-zinc-400">
             {title}
           </span>
         </div>
@@ -67,7 +67,7 @@ export const MetricCard = ({
           {value !== undefined && value !== null ? value : '---'}
         </span>
         {unit && (
-          <span className="text-xs font-scada-mono font-medium text-zinc-400">
+          <span className="text-xs font-scada-mono font-medium text-slate-400 dark:text-zinc-400">
             {unit}
           </span>
         )}
@@ -75,7 +75,7 @@ export const MetricCard = ({
 
       {/* Progress Bar (if provided) */}
       {typeof progress === 'number' && (
-        <div className="w-full bg-[#141414] rounded-full h-1.5 my-2.5 overflow-hidden border border-[#2A2A2A]">
+        <div className="w-full bg-slate-100 dark:bg-[#141414] rounded-full h-1.5 my-2.5 overflow-hidden border border-slate-200 dark:border-[#2A2A2A]">
           <div
             className={`h-full rounded-full transition-all duration-500 ${
               progress > 80
@@ -92,19 +92,19 @@ export const MetricCard = ({
       )}
 
       {/* Footer / Trend */}
-      <div className="flex items-center justify-between text-xs text-zinc-400 mt-2">
+      <div className="flex items-center justify-between text-xs text-slate-500 dark:text-zinc-400 mt-2">
         {trend && (
           <div className="flex items-center gap-1 font-scada-mono">
-            {trendDirection === 'up' && <TrendingUp className="w-3.5 h-3.5 text-emerald-400" />}
-            {trendDirection === 'down' && <TrendingDown className="w-3.5 h-3.5 text-rose-400" />}
-            {trendDirection === 'none' && <Minus className="w-3.5 h-3.5 text-zinc-500" />}
-            <span className={trendDirection === 'up' ? 'text-emerald-400' : trendDirection === 'down' ? 'text-rose-400' : 'text-zinc-400'}>
+            {trendDirection === 'up' && <TrendingUp className="w-3.5 h-3.5 text-emerald-500 dark:text-emerald-400" />}
+            {trendDirection === 'down' && <TrendingDown className="w-3.5 h-3.5 text-rose-500 dark:text-rose-400" />}
+            {trendDirection === 'none' && <Minus className="w-3.5 h-3.5 text-slate-400 dark:text-zinc-500" />}
+            <span className={trendDirection === 'up' ? 'text-emerald-600 dark:text-emerald-400' : trendDirection === 'down' ? 'text-rose-600 dark:text-rose-400' : 'text-slate-500 dark:text-zinc-400'}>
               {trend}
             </span>
           </div>
         )}
 
-        {subtext && <span className="text-zinc-400 truncate text-[11px]">{subtext}</span>}
+        {subtext && <span className="text-slate-400 dark:text-zinc-400 truncate text-[11px]">{subtext}</span>}
 
         {actionButton && <div className="ml-auto">{actionButton}</div>}
       </div>

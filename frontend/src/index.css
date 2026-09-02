@@ -3,10 +3,24 @@
 @tailwind utilities;
 
 :root {
+  color-scheme: light dark;
+  --scada-bg: #121212;
+  --scada-card: #1E1E1E;
+  --scada-border: #2A2A2A;
+}
+
+html.dark {
   color-scheme: dark;
   --scada-bg: #121212;
   --scada-card: #1E1E1E;
   --scada-border: #2A2A2A;
+}
+
+html.light {
+  color-scheme: light;
+  --scada-bg: #F8FAFC;
+  --scada-card: #FFFFFF;
+  --scada-border: #E2E8F0;
 }
 
 body {
@@ -14,6 +28,12 @@ body {
   color: #E4E4E7;
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   overflow-x: hidden;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+html.light body {
+  background-color: #F8FAFC;
+  color: #0F172A;
 }
 
 /* Monospace font class for telemetry, numbers, coords, logs */
@@ -29,11 +49,23 @@ body {
     linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
 }
 
+html.light .scada-grid-bg {
+  background-image: 
+    linear-gradient(to right, rgba(15, 23, 42, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.03) 1px, transparent 1px);
+}
+
 .scada-blueprint-bg {
   background-size: 20px 20px;
   background-image: 
     linear-gradient(to right, rgba(0, 229, 255, 0.04) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(0, 229, 255, 0.04) 1px, transparent 1px);
+}
+
+html.light .scada-blueprint-bg {
+  background-image: 
+    linear-gradient(to right, rgba(2, 132, 199, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(2, 132, 199, 0.06) 1px, transparent 1px);
 }
 
 /* Custom Scrollbars */
@@ -46,13 +78,25 @@ body {
   background: #141414;
 }
 
+html.light ::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
 ::-webkit-scrollbar-thumb {
   background: #2C2C2E;
   border-radius: 3px;
 }
 
+html.light ::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+}
+
 ::-webkit-scrollbar-thumb:hover {
   background: #3A3A3C;
+}
+
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
 }
 
 /* Glowing Neon Elements */
@@ -101,23 +145,8 @@ body {
   .no-print {
     display: none !important;
   }
-  
+
   .print-only {
     display: block !important;
-  }
-  
-  .scada-card, .bg-\[\#1E1E1E\], .bg-\[\#181818\] {
-    background-color: #ffffff !important;
-    border: 1px solid #cccccc !important;
-    color: #000000 !important;
-    box-shadow: none !important;
-  }
-
-  .text-white, .text-zinc-100, .text-zinc-200, .text-zinc-300 {
-    color: #111111 !important;
-  }
-
-  .text-zinc-400, .text-zinc-500 {
-    color: #444444 !important;
   }
 }

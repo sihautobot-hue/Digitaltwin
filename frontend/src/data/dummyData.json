@@ -1,23 +1,23 @@
 {
   "station": {
-    "id": "STN-ANT-03",
-    "name": "Bharati-Maitri Polar Station",
-    "code": "SIH26060",
+    "id": "STN-ANT-MTR",
+    "name": "Maitri Polar Research Station",
+    "code": "SIH26060-MTR",
     "country": "India - NCPOR / MoES",
     "coordinates": {
-      "latitude": "-69°24'27\" S",
-      "longitude": "76°11'43\" E",
-      "latDecimal": -69.4075,
-      "longDecimal": 76.1953,
-      "elevationMeters": 35.4,
-      "region": "Larsemann Hills, Princess Elizabeth Land, East Antarctica"
+      "latitude": "-70°45'57\" S",
+      "longitude": "11°44'09\" E",
+      "latDecimal": -70.7658,
+      "longDecimal": 11.7358,
+      "elevationMeters": 117,
+      "region": "Schirmacher Oasis, Queen Maud Land, East Antarctica"
     },
     "season": "Austral Winter 2026",
     "polarCycle": "Polar Night (0h Daylight)",
     "timeZone": "UTC+05:00",
     "crew": {
       "totalOccupants": 24,
-      "stationCommander": "Ajit Yadav (Expedition 45)",
+      "stationCommander": "Dr. Rajeshwar Sharma (Expedition 45)",
       "chiefEngineer": "Cmdr. Ananya Rao",
       "medicalOfficer": "Dr. Pradeep Nair",
       "meteorologist": "Dr. Sneha Verma"
@@ -45,7 +45,7 @@
       "windDirectionDeg": 158,
       "barometricPressureHpa": 962.3,
       "pressureTrend": "Falling Rapidly (-4.1 hPa/3h)",
-      "humidityPercent": 48.0,
+      "humidityPercent": 48,
       "visibilityMeters": 600,
       "blizzardAlert": {
         "level": "CRITICAL",
@@ -54,8 +54,8 @@
         "etaHours": 4.5,
         "advisory": "Strict tether-line protocol active. Outstation travel prohibited."
       },
-      "uvIndex": 0.0,
-      "solarRadiationWm2": 0.0,
+      "uvIndex": 0,
+      "solarRadiationWm2": 0,
       "geomagneticKp": 6.3,
       "geomagneticStatus": "WARNING",
       "auroraProbability": 92
@@ -70,9 +70,9 @@
       },
       {
         "time": "02:00",
-        "tempC": -39.0,
+        "tempC": -39,
         "windKnots": 38,
-        "pressureHpa": 976.0,
+        "pressureHpa": 976,
         "windChillC": -54.1
       },
       {
@@ -98,7 +98,7 @@
       },
       {
         "time": "10:00",
-        "tempC": -42.0,
+        "tempC": -42,
         "windKnots": 55,
         "pressureHpa": 965.2,
         "windChillC": -63.7
@@ -173,14 +173,14 @@
   "power": {
     "overview": {
       "totalLoadKw": 146.8,
-      "totalCapacityKw": 420.0,
+      "totalCapacityKw": 420,
       "loadPercentage": 34.9,
       "gridFrequencyHz": 50.04,
       "busVoltageV": 401.5,
       "powerFactor": 0.95,
       "gridStatus": "NORMAL",
       "bessSocPercent": 88.2,
-      "bessCapacityKwh": 600.0,
+      "bessCapacityKwh": 600,
       "bessCurrentKwh": 529.2,
       "bessChargeRateKw": -14.5,
       "bessHealthPercent": 96.8,
@@ -193,12 +193,12 @@
         "type": "Diesel Generator",
         "status": "NORMAL",
         "loadKw": 98.4,
-        "maxKw": 250.0,
+        "maxKw": 250,
         "loadPercent": 39.3,
         "rpm": 1500,
         "coolantTempC": 84.5,
         "oilPressureBar": 4.9,
-        "exhaustTempC": 382.0,
+        "exhaustTempC": 382,
         "fuelRateLph": 24.8,
         "vibrationMms": 1.8,
         "runHours": 4320.5,
@@ -209,14 +209,14 @@
         "name": "Secondary Genset Bravo (Cummins QSM11)",
         "type": "Diesel Generator",
         "status": "WARNING",
-        "loadKw": 0.0,
-        "maxKw": 200.0,
-        "loadPercent": 0.0,
+        "loadKw": 0,
+        "maxKw": 200,
+        "loadPercent": 0,
         "rpm": 0,
-        "coolantTempC": 48.0,
-        "oilPressureBar": 0.0,
-        "exhaustTempC": 24.0,
-        "fuelRateLph": 0.0,
+        "coolantTempC": 48,
+        "oilPressureBar": 0,
+        "exhaustTempC": 24,
+        "fuelRateLph": 0,
         "vibrationMms": 4.6,
         "runHours": 3192.1,
         "healthScore": 79,
@@ -227,15 +227,15 @@
         "name": "Emergency Genset Charlie (Kirloskar Polar)",
         "type": "Diesel Generator",
         "status": "NORMAL",
-        "loadKw": 0.0,
-        "maxKw": 150.0,
-        "loadPercent": 0.0,
+        "loadKw": 0,
+        "maxKw": 150,
+        "loadPercent": 0,
         "rpm": 0,
-        "coolantTempC": 22.0,
-        "oilPressureBar": 0.0,
-        "exhaustTempC": -8.0,
-        "fuelRateLph": 0.0,
-        "vibrationMms": 0.0,
+        "coolantTempC": 22,
+        "oilPressureBar": 0,
+        "exhaustTempC": -8,
+        "fuelRateLph": 0,
+        "vibrationMms": 0,
         "runHours": 1105.8,
         "healthScore": 92
       },
@@ -245,15 +245,15 @@
         "type": "Renewable Wind",
         "status": "NORMAL",
         "loadKw": 48.4,
-        "maxKw": 60.0,
+        "maxKw": 60,
         "loadPercent": 80.6,
         "rpm": 428,
         "coolantTempC": -18.2,
         "oilPressureBar": 2.4,
-        "exhaustTempC": 0.0,
-        "fuelRateLph": 0.0,
+        "exhaustTempC": 0,
+        "fuelRateLph": 0,
         "vibrationMms": 2.1,
-        "runHours": 8940.0,
+        "runHours": 8940,
         "healthScore": 91
       },
       {
@@ -261,16 +261,16 @@
         "name": "Bifacial Vertical PV Array (120kWp)",
         "type": "Solar PV",
         "status": "WARNING",
-        "loadKw": 0.0,
-        "maxKw": 120.0,
-        "loadPercent": 0.0,
+        "loadKw": 0,
+        "maxKw": 120,
+        "loadPercent": 0,
         "rpm": 0,
-        "coolantTempC": -38.0,
-        "oilPressureBar": 0.0,
-        "exhaustTempC": 0.0,
-        "fuelRateLph": 0.0,
-        "vibrationMms": 0.0,
-        "runHours": 6420.0,
+        "coolantTempC": -38,
+        "oilPressureBar": 0,
+        "exhaustTempC": 0,
+        "fuelRateLph": 0,
+        "vibrationMms": 0,
+        "runHours": 6420,
         "healthScore": 85,
         "note": "Zero irradiance due to Polar Night cycle"
       }
@@ -281,7 +281,7 @@
         "name": "Life Support & HVAC Heating",
         "priority": "CRITICAL",
         "currentKw": 64.2,
-        "capacityKw": 90.0,
+        "capacityKw": 90,
         "status": "NORMAL",
         "breakerClosed": true
       },
@@ -290,7 +290,7 @@
         "name": "Satellite & Comms Array",
         "priority": "CRITICAL",
         "currentKw": 16.4,
-        "capacityKw": 25.0,
+        "capacityKw": 25,
         "status": "NORMAL",
         "breakerClosed": true
       },
@@ -299,7 +299,7 @@
         "name": "Fuel Tank Thermal Tracing",
         "priority": "CRITICAL",
         "currentKw": 24.8,
-        "capacityKw": 35.0,
+        "capacityKw": 35,
         "status": "NORMAL",
         "breakerClosed": true
       },
@@ -308,7 +308,7 @@
         "name": "Atmospheric Science Lab",
         "priority": "WARNING",
         "currentKw": 28.6,
-        "capacityKw": 40.0,
+        "capacityKw": 40,
         "status": "NORMAL",
         "breakerClosed": true
       },
@@ -317,7 +317,7 @@
         "name": "Vehicle Workshop & Heavy Bay",
         "priority": "WARNING",
         "currentKw": 12.8,
-        "capacityKw": 30.0,
+        "capacityKw": 30,
         "status": "NORMAL",
         "breakerClosed": true
       },
@@ -325,8 +325,8 @@
         "id": "CKT-06",
         "name": "Helipad De-icing & Floodlights",
         "priority": "CRITICAL",
-        "currentKw": 0.0,
-        "capacityKw": 20.0,
+        "currentKw": 0,
+        "capacityKw": 20,
         "status": "NORMAL",
         "breakerClosed": false
       }
@@ -334,42 +334,42 @@
     "history24h": [
       {
         "time": "00:00",
-        "gensetKw": 112.0,
-        "windKw": 24.0,
+        "gensetKw": 112,
+        "windKw": 24,
         "solarKw": 0,
-        "bessKw": 10.0,
-        "totalDemand": 146.0
+        "bessKw": 10,
+        "totalDemand": 146
       },
       {
         "time": "03:00",
-        "gensetKw": 108.0,
-        "windKw": 28.0,
+        "gensetKw": 108,
+        "windKw": 28,
         "solarKw": 0,
-        "bessKw": 8.0,
-        "totalDemand": 144.0
+        "bessKw": 8,
+        "totalDemand": 144
       },
       {
         "time": "06:00",
-        "gensetKw": 95.0,
-        "windKw": 42.0,
+        "gensetKw": 95,
+        "windKw": 42,
         "solarKw": 0,
-        "bessKw": 5.0,
-        "totalDemand": 142.0
+        "bessKw": 5,
+        "totalDemand": 142
       },
       {
         "time": "09:00",
-        "gensetKw": 88.0,
-        "windKw": 54.0,
+        "gensetKw": 88,
+        "windKw": 54,
         "solarKw": 0,
-        "bessKw": 6.0,
-        "totalDemand": 148.0
+        "bessKw": 6,
+        "totalDemand": 148
       },
       {
         "time": "12:00",
         "gensetKw": 98.4,
         "windKw": 48.4,
         "solarKw": 0,
-        "bessKw": 0.0,
+        "bessKw": 0,
         "totalDemand": 146.8
       }
     ]
@@ -464,8 +464,8 @@
         "name": "Inter-Tank Transfer Pump",
         "sourceTank": "TANK-A",
         "dest": "TANK-D",
-        "flowRateLpm": 0.0,
-        "pressurePsi": 0.0,
+        "flowRateLpm": 0,
+        "pressurePsi": 0,
         "status": "NORMAL"
       },
       {
@@ -473,8 +473,8 @@
         "name": "Emergency Recirculation Pump",
         "sourceTank": "ALL",
         "dest": "Thermal Loop",
-        "flowRateLpm": 0.0,
-        "pressurePsi": 0.0,
+        "flowRateLpm": 0,
+        "pressurePsi": 0,
         "status": "NORMAL"
       }
     ],
@@ -539,7 +539,7 @@
         "occupancy": 18,
         "maxOccupancy": 32,
         "tempC": 21.4,
-        "targetTempC": 21.0,
+        "targetTempC": 21,
         "humidity": 45,
         "oxygenPercent": 20.9,
         "co2Ppm": 540,
@@ -575,7 +575,7 @@
         "occupancy": 2,
         "maxOccupancy": 6,
         "tempC": 28.5,
-        "targetTempC": 25.0,
+        "targetTempC": 25,
         "humidity": 30,
         "oxygenPercent": 20.8,
         "co2Ppm": 480,
@@ -611,7 +611,7 @@
         "occupancy": 3,
         "maxOccupancy": 10,
         "tempC": 19.8,
-        "targetTempC": 20.0,
+        "targetTempC": 20,
         "humidity": 40,
         "oxygenPercent": 20.9,
         "co2Ppm": 490,
@@ -647,7 +647,7 @@
         "occupancy": 1,
         "maxOccupancy": 4,
         "tempC": 18.2,
-        "targetTempC": 18.0,
+        "targetTempC": 18,
         "humidity": 35,
         "oxygenPercent": 20.9,
         "co2Ppm": 420,
@@ -683,7 +683,7 @@
         "occupancy": 0,
         "maxOccupancy": 4,
         "tempC": -14.2,
-        "targetTempC": -15.0,
+        "targetTempC": -15,
         "humidity": 28,
         "oxygenPercent": 20.7,
         "co2Ppm": 410,
@@ -719,7 +719,7 @@
         "occupancy": 0,
         "maxOccupancy": 8,
         "tempC": 8.5,
-        "targetTempC": 10.0,
+        "targetTempC": 10,
         "humidity": 38,
         "oxygenPercent": 20.8,
         "co2Ppm": 460,
@@ -755,7 +755,7 @@
         "occupancy": 0,
         "maxOccupancy": 6,
         "tempC": -42.8,
-        "targetTempC": -40.0,
+        "targetTempC": -40,
         "humidity": 48,
         "oxygenPercent": 20.9,
         "co2Ppm": 390,
@@ -791,7 +791,7 @@
         "occupancy": 0,
         "maxOccupancy": 4,
         "tempC": 16.4,
-        "targetTempC": 15.0,
+        "targetTempC": 15,
         "humidity": 52,
         "oxygenPercent": 20.7,
         "co2Ppm": 510,
@@ -1038,8 +1038,8 @@
       "projectedOutdoorTempC": -48.2,
       "simulatedHeatingDemandKw": 78.4,
       "powerGridStressIndex": "HIGH (76/100)",
-      "solarContributionForecast": 0.0,
-      "windTurbineProductionForecastKw": 58.0
+      "solarContributionForecast": 0,
+      "windTurbineProductionForecastKw": 58
     },
     "fuelDepletionSimulation": [
       {
@@ -1111,7 +1111,7 @@
       {
         "hour": "+12h",
         "windKnots": 92,
-        "tempC": -47.0,
+        "tempC": -47,
         "powerKw": 172,
         "fuelRateLph": 28.5,
         "alarmRisk": "CRITICAL"
@@ -1137,7 +1137,7 @@
         "windKnots": 52,
         "tempC": -40.5,
         "powerKw": 145,
-        "fuelRateLph": 24.0,
+        "fuelRateLph": 24,
         "alarmRisk": "MODERATE"
       },
       {
@@ -1151,7 +1151,7 @@
       {
         "hour": "+72h",
         "windKnots": 34,
-        "tempC": -36.0,
+        "tempC": -36,
         "powerKw": 136,
         "fuelRateLph": 22.5,
         "alarmRisk": "LOW"
@@ -1183,5 +1183,2319 @@
     "stationLockdown": false,
     "operatorRole": "MISSION_CONTROLLER",
     "lastCacheFlush": "2026-08-29T08:15:00Z"
-  }
+  },
+  "stations": {
+    "maitri": {
+      "station": {
+        "id": "STN-ANT-MTR",
+        "name": "Maitri Polar Research Station",
+        "code": "SIH26060-MTR",
+        "country": "India - NCPOR / MoES",
+        "coordinates": {
+          "latitude": "-70°45'57\" S",
+          "longitude": "11°44'09\" E",
+          "latDecimal": -70.7658,
+          "longDecimal": 11.7358,
+          "elevationMeters": 117,
+          "region": "Schirmacher Oasis, Queen Maud Land, East Antarctica"
+        },
+        "season": "Austral Winter 2026",
+        "polarCycle": "Polar Night (0h Daylight)",
+        "timeZone": "UTC+05:00",
+        "crew": {
+          "totalOccupants": 24,
+          "stationCommander": "Dr. Rajeshwar Sharma (Expedition 45)",
+          "chiefEngineer": "Cmdr. Ananya Rao",
+          "medicalOfficer": "Dr. Pradeep Nair",
+          "meteorologist": "Dr. Sneha Verma"
+        },
+        "telemetryLink": {
+          "satellite": "GSAT-7A / Inmarsat BGAN Global Xpress",
+          "status": "NORMAL",
+          "latencyMs": 612,
+          "bandwidthKbps": 512,
+          "signalQualityPercent": 94.2,
+          "lastSyncTimestamp": "2026-08-29T08:18:42Z"
+        },
+        "securityStatus": "NORMAL",
+        "lockdownActive": false
+      },
+      "weather": {
+        "current": {
+          "outdoorTempC": -42.8,
+          "indoorTempC": 21.2,
+          "windChillC": -65.4,
+          "windSpeedKnots": 58.4,
+          "windGustKnots": 84.2,
+          "windSpeedKmh": 108.2,
+          "windDirection": "SSE",
+          "windDirectionDeg": 158,
+          "barometricPressureHpa": 962.3,
+          "pressureTrend": "Falling Rapidly (-4.1 hPa/3h)",
+          "humidityPercent": 48,
+          "visibilityMeters": 600,
+          "blizzardAlert": {
+            "level": "CRITICAL",
+            "code": "BLIZZARD_LEVEL_3",
+            "title": "Severe Katabatic Storm Warning",
+            "etaHours": 4.5,
+            "advisory": "Strict tether-line protocol active. Outstation travel prohibited."
+          },
+          "uvIndex": 0,
+          "solarRadiationWm2": 0,
+          "geomagneticKp": 6.3,
+          "geomagneticStatus": "WARNING",
+          "auroraProbability": 92
+        },
+        "history24h": [
+          {
+            "time": "00:00",
+            "tempC": -38.2,
+            "windKnots": 34,
+            "pressureHpa": 978.2,
+            "windChillC": -52.4
+          },
+          {
+            "time": "02:00",
+            "tempC": -39,
+            "windKnots": 38,
+            "pressureHpa": 976,
+            "windChillC": -54.1
+          },
+          {
+            "time": "04:00",
+            "tempC": -39.6,
+            "windKnots": 42,
+            "pressureHpa": 974.1,
+            "windChillC": -56.8
+          },
+          {
+            "time": "06:00",
+            "tempC": -40.5,
+            "windKnots": 46,
+            "pressureHpa": 971.8,
+            "windChillC": -59.2
+          },
+          {
+            "time": "08:00",
+            "tempC": -41.2,
+            "windKnots": 51,
+            "pressureHpa": 968.5,
+            "windChillC": -61.5
+          },
+          {
+            "time": "10:00",
+            "tempC": -42,
+            "windKnots": 55,
+            "pressureHpa": 965.2,
+            "windChillC": -63.7
+          },
+          {
+            "time": "12:00",
+            "tempC": -42.8,
+            "windKnots": 58,
+            "pressureHpa": 962.3,
+            "windChillC": -65.4
+          }
+        ],
+        "forecast7Days": [
+          {
+            "day": "Today (D1)",
+            "highC": -40,
+            "lowC": -45,
+            "windKnots": 62,
+            "condition": "Blizzard / Katabatic Winds",
+            "status": "CRITICAL"
+          },
+          {
+            "day": "Day 2",
+            "highC": -38,
+            "lowC": -44,
+            "windKnots": 52,
+            "condition": "Drifting Snow",
+            "status": "WARNING"
+          },
+          {
+            "day": "Day 3",
+            "highC": -35,
+            "lowC": -41,
+            "windKnots": 36,
+            "condition": "Overcast Polar Skies",
+            "status": "NORMAL"
+          },
+          {
+            "day": "Day 4",
+            "highC": -34,
+            "lowC": -39,
+            "windKnots": 28,
+            "condition": "Clear Polar Night",
+            "status": "NORMAL"
+          },
+          {
+            "day": "Day 5",
+            "highC": -36,
+            "lowC": -42,
+            "windKnots": 32,
+            "condition": "Clear / High Aurora Kp",
+            "status": "NORMAL"
+          },
+          {
+            "day": "Day 6",
+            "highC": -39,
+            "lowC": -46,
+            "windKnots": 48,
+            "condition": "Katabatic Surge",
+            "status": "WARNING"
+          },
+          {
+            "day": "Day 7",
+            "highC": -41,
+            "lowC": -47,
+            "windKnots": 56,
+            "condition": "Blizzard Warning",
+            "status": "CRITICAL"
+          }
+        ]
+      },
+      "power": {
+        "overview": {
+          "totalLoadKw": 146.8,
+          "totalCapacityKw": 420,
+          "loadPercentage": 34.9,
+          "gridFrequencyHz": 50.04,
+          "busVoltageV": 401.5,
+          "powerFactor": 0.95,
+          "gridStatus": "NORMAL",
+          "bessSocPercent": 88.2,
+          "bessCapacityKwh": 600,
+          "bessCurrentKwh": 529.2,
+          "bessChargeRateKw": -14.5,
+          "bessHealthPercent": 96.8,
+          "bessCycleCount": 412
+        },
+        "sources": [
+          {
+            "id": "GEN-01",
+            "name": "Main Genset Alpha (CAT 3406 Arctic)",
+            "type": "Diesel Generator",
+            "status": "NORMAL",
+            "loadKw": 98.4,
+            "maxKw": 250,
+            "loadPercent": 39.3,
+            "rpm": 1500,
+            "coolantTempC": 84.5,
+            "oilPressureBar": 4.9,
+            "exhaustTempC": 382,
+            "fuelRateLph": 24.8,
+            "vibrationMms": 1.8,
+            "runHours": 4320.5,
+            "healthScore": 94
+          },
+          {
+            "id": "GEN-02",
+            "name": "Secondary Genset Bravo (Cummins QSM11)",
+            "type": "Diesel Generator",
+            "status": "WARNING",
+            "loadKw": 0,
+            "maxKw": 200,
+            "loadPercent": 0,
+            "rpm": 0,
+            "coolantTempC": 48,
+            "oilPressureBar": 0,
+            "exhaustTempC": 24,
+            "fuelRateLph": 0,
+            "vibrationMms": 4.6,
+            "runHours": 3192.1,
+            "healthScore": 79,
+            "note": "Bearing harmonic anomaly detected on sensor B3"
+          },
+          {
+            "id": "GEN-03",
+            "name": "Emergency Genset Charlie (Kirloskar Polar)",
+            "type": "Diesel Generator",
+            "status": "NORMAL",
+            "loadKw": 0,
+            "maxKw": 150,
+            "loadPercent": 0,
+            "rpm": 0,
+            "coolantTempC": 22,
+            "oilPressureBar": 0,
+            "exhaustTempC": -8,
+            "fuelRateLph": 0,
+            "vibrationMms": 0,
+            "runHours": 1105.8,
+            "healthScore": 92
+          },
+          {
+            "id": "WIND-ARRAY",
+            "name": "Micro-Wind Turbine Array (4x 15kW)",
+            "type": "Renewable Wind",
+            "status": "NORMAL",
+            "loadKw": 48.4,
+            "maxKw": 60,
+            "loadPercent": 80.6,
+            "rpm": 428,
+            "coolantTempC": -18.2,
+            "oilPressureBar": 2.4,
+            "exhaustTempC": 0,
+            "fuelRateLph": 0,
+            "vibrationMms": 2.1,
+            "runHours": 8940,
+            "healthScore": 91
+          },
+          {
+            "id": "SOLAR-PV",
+            "name": "Bifacial Vertical PV Array (120kWp)",
+            "type": "Solar PV",
+            "status": "WARNING",
+            "loadKw": 0,
+            "maxKw": 120,
+            "loadPercent": 0,
+            "rpm": 0,
+            "coolantTempC": -38,
+            "oilPressureBar": 0,
+            "exhaustTempC": 0,
+            "fuelRateLph": 0,
+            "vibrationMms": 0,
+            "runHours": 6420,
+            "healthScore": 85,
+            "note": "Zero irradiance due to Polar Night cycle"
+          }
+        ],
+        "distributionCircuits": [
+          {
+            "id": "CKT-01",
+            "name": "Life Support & HVAC Heating",
+            "priority": "CRITICAL",
+            "currentKw": 64.2,
+            "capacityKw": 90,
+            "status": "NORMAL",
+            "breakerClosed": true
+          },
+          {
+            "id": "CKT-02",
+            "name": "Satellite & Comms Array",
+            "priority": "CRITICAL",
+            "currentKw": 16.4,
+            "capacityKw": 25,
+            "status": "NORMAL",
+            "breakerClosed": true
+          },
+          {
+            "id": "CKT-03",
+            "name": "Fuel Tank Thermal Tracing",
+            "priority": "CRITICAL",
+            "currentKw": 24.8,
+            "capacityKw": 35,
+            "status": "NORMAL",
+            "breakerClosed": true
+          },
+          {
+            "id": "CKT-04",
+            "name": "Atmospheric Science Lab",
+            "priority": "WARNING",
+            "currentKw": 28.6,
+            "capacityKw": 40,
+            "status": "NORMAL",
+            "breakerClosed": true
+          },
+          {
+            "id": "CKT-05",
+            "name": "Vehicle Workshop & Heavy Bay",
+            "priority": "WARNING",
+            "currentKw": 12.8,
+            "capacityKw": 30,
+            "status": "NORMAL",
+            "breakerClosed": true
+          },
+          {
+            "id": "CKT-06",
+            "name": "Helipad De-icing & Floodlights",
+            "priority": "CRITICAL",
+            "currentKw": 0,
+            "capacityKw": 20,
+            "status": "NORMAL",
+            "breakerClosed": false
+          }
+        ],
+        "history24h": [
+          {
+            "time": "00:00",
+            "gensetKw": 112,
+            "windKw": 24,
+            "solarKw": 0,
+            "bessKw": 10,
+            "totalDemand": 146
+          },
+          {
+            "time": "03:00",
+            "gensetKw": 108,
+            "windKw": 28,
+            "solarKw": 0,
+            "bessKw": 8,
+            "totalDemand": 144
+          },
+          {
+            "time": "06:00",
+            "gensetKw": 95,
+            "windKw": 42,
+            "solarKw": 0,
+            "bessKw": 5,
+            "totalDemand": 142
+          },
+          {
+            "time": "09:00",
+            "gensetKw": 88,
+            "windKw": 54,
+            "solarKw": 0,
+            "bessKw": 6,
+            "totalDemand": 148
+          },
+          {
+            "time": "12:00",
+            "gensetKw": 98.4,
+            "windKw": 48.4,
+            "solarKw": 0,
+            "bessKw": 0,
+            "totalDemand": 146.8
+          }
+        ]
+      },
+      "fuel": {
+        "summary": {
+          "totalCapacityLitres": 180000,
+          "totalCurrentLitres": 134250,
+          "overallPercent": 74.58,
+          "dailyBurnRateLitres": 595.2,
+          "daysRemaining": 225.5,
+          "winterTargetDays": 190,
+          "safeReserveThresholdLitres": 40000,
+          "fuelQualityStatus": "NORMAL",
+          "purityIndex": 99.4,
+          "lastRefuelDate": "2026-02-14 (R/V Maitri Voyage 44)"
+        },
+        "tanks": [
+          {
+            "id": "TANK-A",
+            "name": "Bulk Storage Alpha",
+            "fuelType": "Jet-A1 Polar Low-Freeze (-58°C)",
+            "capacityLitres": 45000,
+            "currentLitres": 38400,
+            "percentage": 85.3,
+            "temperatureC": -14.6,
+            "pressureBar": 1.14,
+            "ullageLitres": 6600,
+            "status": "NORMAL",
+            "pumpState": "STANDBY",
+            "leakDetected": false,
+            "traceHeaterActive": true
+          },
+          {
+            "id": "TANK-B",
+            "name": "Bulk Storage Bravo (Active Feed)",
+            "fuelType": "Jet-A1 Polar Low-Freeze (-58°C)",
+            "capacityLitres": 45000,
+            "currentLitres": 34100,
+            "percentage": 75.7,
+            "temperatureC": -15.1,
+            "pressureBar": 1.12,
+            "ullageLitres": 10900,
+            "status": "NORMAL",
+            "pumpState": "ACTIVE",
+            "leakDetected": false,
+            "traceHeaterActive": true
+          },
+          {
+            "id": "TANK-C",
+            "name": "Bulk Storage Charlie (Reserve)",
+            "fuelType": "Special Antarctic Diesel (SAD-90)",
+            "capacityLitres": 45000,
+            "currentLitres": 39500,
+            "percentage": 87.8,
+            "temperatureC": -16.2,
+            "pressureBar": 1.18,
+            "ullageLitres": 5500,
+            "status": "NORMAL",
+            "pumpState": "STANDBY",
+            "leakDetected": false,
+            "traceHeaterActive": true
+          },
+          {
+            "id": "TANK-D",
+            "name": "Aviation & Day Tank Delta",
+            "fuelType": "Jet-A1 Polar Low-Freeze (-58°C)",
+            "capacityLitres": 45000,
+            "currentLitres": 22250,
+            "percentage": 49.4,
+            "temperatureC": -12.4,
+            "pressureBar": 1.08,
+            "ullageLitres": 22750,
+            "status": "WARNING",
+            "pumpState": "STANDBY",
+            "leakDetected": false,
+            "traceHeaterActive": true
+          }
+        ],
+        "pumps": [
+          {
+            "id": "PMP-01",
+            "name": "Primary Feed Pump Alpha",
+            "sourceTank": "TANK-B",
+            "dest": "Genset Header 01",
+            "flowRateLpm": 42.5,
+            "pressurePsi": 58.4,
+            "status": "NORMAL"
+          },
+          {
+            "id": "PMP-02",
+            "name": "Inter-Tank Transfer Pump",
+            "sourceTank": "TANK-A",
+            "dest": "TANK-D",
+            "flowRateLpm": 0,
+            "pressurePsi": 0,
+            "status": "NORMAL"
+          },
+          {
+            "id": "PMP-03",
+            "name": "Emergency Recirculation Pump",
+            "sourceTank": "ALL",
+            "dest": "Thermal Loop",
+            "flowRateLpm": 0,
+            "pressurePsi": 0,
+            "status": "NORMAL"
+          }
+        ],
+        "consumptionHistory": [
+          {
+            "month": "Mar",
+            "consumedL": 17800,
+            "tempAvgC": -24,
+            "blizzardDays": 4
+          },
+          {
+            "month": "Apr",
+            "consumedL": 18200,
+            "tempAvgC": -32,
+            "blizzardDays": 6
+          },
+          {
+            "month": "May",
+            "consumedL": 19400,
+            "tempAvgC": -38,
+            "blizzardDays": 9
+          },
+          {
+            "month": "Jun",
+            "consumedL": 20800,
+            "tempAvgC": -41,
+            "blizzardDays": 12
+          },
+          {
+            "month": "Jul",
+            "consumedL": 21100,
+            "tempAvgC": -44,
+            "blizzardDays": 14
+          },
+          {
+            "month": "Aug (Current)",
+            "consumedL": 19100,
+            "tempAvgC": -43,
+            "blizzardDays": 11
+          }
+        ]
+      },
+      "digitalTwin": {
+        "stationBlueprint": {
+          "gridWidth": 960,
+          "gridHeight": 440,
+          "totalModules": 8,
+          "activePersonnelCount": 24,
+          "activeAlarmsCount": 2,
+          "structuralIntegrityScore": 98.4
+        },
+        "modules": [
+          {
+            "id": "MOD-A",
+            "name": "Habitat Core & Medical Bay",
+            "code": "HAB-MED",
+            "x": 60,
+            "y": 60,
+            "w": 180,
+            "h": 140,
+            "status": "NORMAL",
+            "occupancy": 18,
+            "maxOccupancy": 32,
+            "tempC": 21.4,
+            "targetTempC": 21,
+            "humidity": 45,
+            "oxygenPercent": 20.9,
+            "co2Ppm": 540,
+            "powerDrawKw": 34.2,
+            "fireSuppression": "ARMED",
+            "airlockSealStatus": "SEALED",
+            "isolationValve": "OPEN",
+            "criticalEquipment": [
+              {
+                "name": "Hyperbaric Chamber",
+                "status": "NORMAL"
+              },
+              {
+                "name": "Telemetry ECG",
+                "status": "NORMAL"
+              },
+              {
+                "name": "Primary HVAC Blower",
+                "status": "NORMAL"
+              }
+            ],
+            "description": "Main crew quarters, galley, recreation lounge, and class-1 polar surgical/telemedicine suite."
+          },
+          {
+            "id": "MOD-B",
+            "name": "Main Powerhouse & BESS",
+            "code": "PWR-BESS",
+            "x": 280,
+            "y": 60,
+            "w": 180,
+            "h": 140,
+            "status": "WARNING",
+            "occupancy": 2,
+            "maxOccupancy": 6,
+            "tempC": 28.5,
+            "targetTempC": 25,
+            "humidity": 30,
+            "oxygenPercent": 20.8,
+            "co2Ppm": 480,
+            "powerDrawKw": 146.8,
+            "fireSuppression": "ARMED",
+            "airlockSealStatus": "SEALED",
+            "isolationValve": "OPEN",
+            "criticalEquipment": [
+              {
+                "name": "Genset Alpha CAT 3406",
+                "status": "NORMAL"
+              },
+              {
+                "name": "Genset Bravo Cummins QSM11",
+                "status": "WARNING"
+              },
+              {
+                "name": "BESS Inverter Matrix 600kVA",
+                "status": "NORMAL"
+              }
+            ],
+            "description": "Triple-redundant polar diesel generation room, 600kWh Lithium Iron Phosphate BESS, and 400V sync board."
+          },
+          {
+            "id": "MOD-C",
+            "name": "Atmospheric & Geomagnetic Lab",
+            "code": "SCI-LAB",
+            "x": 500,
+            "y": 60,
+            "w": 180,
+            "h": 140,
+            "status": "NORMAL",
+            "occupancy": 3,
+            "maxOccupancy": 10,
+            "tempC": 19.8,
+            "targetTempC": 20,
+            "humidity": 40,
+            "oxygenPercent": 20.9,
+            "co2Ppm": 490,
+            "powerDrawKw": 28.6,
+            "fireSuppression": "ARMED",
+            "airlockSealStatus": "SEALED",
+            "isolationValve": "OPEN",
+            "criticalEquipment": [
+              {
+                "name": "Fluxgate Magnetometer",
+                "status": "NORMAL"
+              },
+              {
+                "name": "Ozone Spectrophotometer (Dobson)",
+                "status": "NORMAL"
+              },
+              {
+                "name": "Ice Core Deep Cryo Vault (-80°C)",
+                "status": "NORMAL"
+              }
+            ],
+            "description": "Continuous upper-atmosphere, ionosphere, cosmic ray, and paleoclimate ice-core analytical research facility."
+          },
+          {
+            "id": "MOD-D",
+            "name": "Satellite Radome & Comms Hub",
+            "code": "COM-RAD",
+            "x": 720,
+            "y": 60,
+            "w": 180,
+            "h": 140,
+            "status": "NORMAL",
+            "occupancy": 1,
+            "maxOccupancy": 4,
+            "tempC": 18.2,
+            "targetTempC": 18,
+            "humidity": 35,
+            "oxygenPercent": 20.9,
+            "co2Ppm": 420,
+            "powerDrawKw": 16.4,
+            "fireSuppression": "ARMED",
+            "airlockSealStatus": "SEALED",
+            "isolationValve": "OPEN",
+            "criticalEquipment": [
+              {
+                "name": "4.5m Heated C/Ku Band Radome",
+                "status": "NORMAL"
+              },
+              {
+                "name": "Iridium Edge Failover Router",
+                "status": "NORMAL"
+              },
+              {
+                "name": "HF Marine Radio Beacon",
+                "status": "NORMAL"
+              }
+            ],
+            "description": "Primary satellite uplink station connecting Bharati to NCPOR Goa via dedicated transponder bandwidth."
+          },
+          {
+            "id": "MOD-E",
+            "name": "Cryogenic Fuel Farm & Bunker",
+            "code": "FUEL-FARM",
+            "x": 60,
+            "y": 240,
+            "w": 180,
+            "h": 140,
+            "status": "NORMAL",
+            "occupancy": 0,
+            "maxOccupancy": 4,
+            "tempC": -14.2,
+            "targetTempC": -15,
+            "humidity": 28,
+            "oxygenPercent": 20.7,
+            "co2Ppm": 410,
+            "powerDrawKw": 24.8,
+            "fireSuppression": "ARMED",
+            "airlockSealStatus": "SEALED",
+            "isolationValve": "OPEN",
+            "criticalEquipment": [
+              {
+                "name": "Trace Heating Loop Alpha",
+                "status": "NORMAL"
+              },
+              {
+                "name": "Hydrocarbon Vapor Sensor Matrix",
+                "status": "NORMAL"
+              },
+              {
+                "name": "Auto Fire Foam Deluge",
+                "status": "NORMAL"
+              }
+            ],
+            "description": "Double-walled cryogenic fuel reservoir holding 180kL of low-temperature Jet-A1 and arctic polar diesel."
+          },
+          {
+            "id": "MOD-F",
+            "name": "PistenBully & Heavy Vehicle Bay",
+            "code": "VEH-BAY",
+            "x": 280,
+            "y": 240,
+            "w": 180,
+            "h": 140,
+            "status": "NORMAL",
+            "occupancy": 0,
+            "maxOccupancy": 8,
+            "tempC": 8.5,
+            "targetTempC": 10,
+            "humidity": 38,
+            "oxygenPercent": 20.8,
+            "co2Ppm": 460,
+            "powerDrawKw": 12.8,
+            "fireSuppression": "ARMED",
+            "airlockSealStatus": "SEALED",
+            "isolationValve": "OPEN",
+            "criticalEquipment": [
+              {
+                "name": "Engine Block Pre-heaters",
+                "status": "NORMAL"
+              },
+              {
+                "name": "Hydraulic Lift Gantries",
+                "status": "NORMAL"
+              },
+              {
+                "name": "Track Repair Welder",
+                "status": "NORMAL"
+              }
+            ],
+            "description": "Heavy machinery maintenance shop housing 4 PistenBully 300 Polar tracked vehicles and 8 snowmobiles."
+          },
+          {
+            "id": "MOD-G",
+            "name": "Helipad & Automated Weather Mast",
+            "code": "HELI-AWS",
+            "x": 500,
+            "y": 240,
+            "w": 180,
+            "h": 140,
+            "status": "CRITICAL",
+            "occupancy": 0,
+            "maxOccupancy": 6,
+            "tempC": -42.8,
+            "targetTempC": -40,
+            "humidity": 48,
+            "oxygenPercent": 20.9,
+            "co2Ppm": 390,
+            "powerDrawKw": 4.2,
+            "fireSuppression": "STANDBY",
+            "airlockSealStatus": "RESTRICTED",
+            "isolationValve": "OPEN",
+            "criticalEquipment": [
+              {
+                "name": "De-icing Heating Coils",
+                "status": "CRITICAL"
+              },
+              {
+                "name": "Ultrasonic Sonic Anemometer",
+                "status": "NORMAL"
+              },
+              {
+                "name": "Runway Boundary Beacons",
+                "status": "NORMAL"
+              }
+            ],
+            "description": "Reinforced elevated landing pad for Kamov Ka-32 / Chetak polar helicopters with automated weather radar."
+          },
+          {
+            "id": "MOD-H",
+            "name": "Greywater Recycling & Incinerator",
+            "code": "WST-RECYC",
+            "x": 720,
+            "y": 240,
+            "w": 180,
+            "h": 140,
+            "status": "NORMAL",
+            "occupancy": 0,
+            "maxOccupancy": 4,
+            "tempC": 16.4,
+            "targetTempC": 15,
+            "humidity": 52,
+            "oxygenPercent": 20.7,
+            "co2Ppm": 510,
+            "powerDrawKw": 18.2,
+            "fireSuppression": "ARMED",
+            "airlockSealStatus": "SEALED",
+            "isolationValve": "OPEN",
+            "criticalEquipment": [
+              {
+                "name": "Membrane Bioreactor (MBR)",
+                "status": "NORMAL"
+              },
+              {
+                "name": "Zero-Emission High-Temp Incinerator",
+                "status": "NORMAL"
+              },
+              {
+                "name": "Snow-Melter Thermal Exchanger",
+                "status": "NORMAL"
+              }
+            ],
+            "description": "Advanced closed-loop Madrid Protocol environmental protection plant converting waste to clean greywater."
+          }
+        ]
+      },
+      "inventory": [
+        {
+          "sku": "SP-HYD-041",
+          "name": "Cryogenic Fuel Filter Elements (5-Micron)",
+          "category": "Fuel System",
+          "quantity": 18,
+          "minThreshold": 12,
+          "unit": "Units",
+          "containerId": "CON-ALPHA-02",
+          "status": "NORMAL",
+          "shelfLifeDays": 720,
+          "criticality": "HIGH",
+          "supplier": "NCPOR Central Logistics Goa",
+          "airDropCompatible": true
+        },
+        {
+          "sku": "SP-GEN-109",
+          "name": "Cummins QSM11 Main Journal Bearings",
+          "category": "Power Generation",
+          "quantity": 2,
+          "minThreshold": 4,
+          "unit": "Sets",
+          "containerId": "CON-BRAVO-01",
+          "status": "CRITICAL",
+          "shelfLifeDays": 1800,
+          "criticality": "CRITICAL",
+          "supplier": "Cummins Marine Polar",
+          "airDropCompatible": true
+        },
+        {
+          "sku": "SP-HVC-201",
+          "name": "High-Efficiency Glycol Heat Transfer Fluid (Polar -60°C)",
+          "category": "Life Support / HVAC",
+          "quantity": 420,
+          "minThreshold": 300,
+          "unit": "Litres",
+          "containerId": "CON-ECHO-04",
+          "status": "NORMAL",
+          "shelfLifeDays": 1080,
+          "criticality": "HIGH",
+          "supplier": "Indian Oil Corporation",
+          "airDropCompatible": false
+        },
+        {
+          "sku": "SP-OXY-008",
+          "name": "Medical Grade Oxygen Cylinders (50L 200 Bar)",
+          "category": "Medical & Life Support",
+          "quantity": 14,
+          "minThreshold": 10,
+          "unit": "Cylinders",
+          "containerId": "MED-VAULT-01",
+          "status": "NORMAL",
+          "shelfLifeDays": 900,
+          "criticality": "HIGH",
+          "supplier": "MoES Medical Wing",
+          "airDropCompatible": false
+        },
+        {
+          "sku": "SP-WND-334",
+          "name": "Turbine Pitch Actuator Seals (Fluorosilicone)",
+          "category": "Power Generation",
+          "quantity": 4,
+          "minThreshold": 6,
+          "unit": "Packs",
+          "containerId": "CON-CHARLIE-03",
+          "status": "WARNING",
+          "shelfLifeDays": 640,
+          "criticality": "MEDIUM",
+          "supplier": "Vestas Arctic Tech",
+          "airDropCompatible": true
+        },
+        {
+          "sku": "SP-COM-512",
+          "name": "Ku-Band Low-Noise Block Downconverter (LNB)",
+          "category": "Satellite & Comms",
+          "quantity": 3,
+          "minThreshold": 2,
+          "unit": "Units",
+          "containerId": "RADOME-RACK-02",
+          "status": "NORMAL",
+          "shelfLifeDays": 1400,
+          "criticality": "HIGH",
+          "supplier": "ISRO Telemetry Depot",
+          "airDropCompatible": true
+        },
+        {
+          "sku": "SP-RAT-090",
+          "name": "Freeze-Dried High-Calorie Polar Ration Packs",
+          "category": "Provisions",
+          "quantity": 1450,
+          "minThreshold": 900,
+          "unit": "Meals",
+          "containerId": "FOOD-BUNKER-01",
+          "status": "NORMAL",
+          "shelfLifeDays": 480,
+          "criticality": "CRITICAL",
+          "supplier": "DFRL Mysore",
+          "airDropCompatible": true
+        },
+        {
+          "sku": "SP-VEH-088",
+          "name": "PistenBully Heavy Rubber-Steel Track Cleats",
+          "category": "Vehicles",
+          "quantity": 8,
+          "minThreshold": 12,
+          "unit": "Sections",
+          "containerId": "GARAGE-RACK-A",
+          "status": "WARNING",
+          "shelfLifeDays": 1200,
+          "criticality": "MEDIUM",
+          "supplier": "Kässbohrer Geländefahrzeug",
+          "airDropCompatible": false
+        },
+        {
+          "sku": "SP-ELE-772",
+          "name": "Schneider Electric 400A Molded Case Circuit Breaker",
+          "category": "Power Generation",
+          "quantity": 2,
+          "minThreshold": 2,
+          "unit": "Units",
+          "containerId": "CON-BRAVO-02",
+          "status": "NORMAL",
+          "shelfLifeDays": 2500,
+          "criticality": "HIGH",
+          "supplier": "Schneider India",
+          "airDropCompatible": true
+        },
+        {
+          "sku": "SP-WST-119",
+          "name": "MBR Filtration Membrane Cartridges",
+          "category": "Waste Treatment",
+          "quantity": 6,
+          "minThreshold": 4,
+          "unit": "Cartridges",
+          "containerId": "CON-ECHO-02",
+          "status": "NORMAL",
+          "shelfLifeDays": 900,
+          "criticality": "MEDIUM",
+          "supplier": "Thermax Environmental",
+          "airDropCompatible": true
+        }
+      ],
+      "alerts": [
+        {
+          "id": "ALT-9042",
+          "timestamp": "2026-08-29T08:14:10Z",
+          "severity": "CRITICAL",
+          "subsystem": "Helipad & AWS",
+          "code": "HELI_DEICE_FAIL_C3",
+          "title": "Helipad De-icing Element Group 3 Open Circuit",
+          "message": "Ground temperature sensor reporting ice accumulation on Helipad North Vector. De-icing relay R3-A tripped on overcurrent.",
+          "aiDiagnosis": "Possible cable sheath fracture due to -65°C wind chill stress or mechanical strain from PistenBully crossing.",
+          "recommendedAction": "Isolate breaker CKT-06. Dispatch technician team with thermal camera once blizzard subsides to Level 2.",
+          "rootCauseProbability": 0.89,
+          "acknowledged": false,
+          "acknowledgedBy": null
+        },
+        {
+          "id": "ALT-9039",
+          "timestamp": "2026-08-29T07:42:00Z",
+          "severity": "WARNING",
+          "subsystem": "Powerhouse (GEN-02)",
+          "code": "GEN2_BEARING_VIB_HIGH",
+          "title": "Genset 2 Front Journal Vibration Exceeded 4.5 mm/s",
+          "message": "Fast Fourier Transform spectral analysis detected 120Hz 2nd order harmonic peak on bearing sleeve B3.",
+          "aiDiagnosis": "Micro-fatigue pitting on upper bearing shell. RUL estimated at 180 operating hours before critical seizure.",
+          "recommendedAction": "Maintain GEN-02 on standby only. Prioritize GEN-01 and Wind Turbines. Schedule bearing swap from spare inventory SP-GEN-109.",
+          "rootCauseProbability": 0.94,
+          "acknowledged": false,
+          "acknowledgedBy": null
+        },
+        {
+          "id": "ALT-9028",
+          "timestamp": "2026-08-29T05:22:15Z",
+          "severity": "WARNING",
+          "subsystem": "Fuel Farm (TANK-D)",
+          "code": "FUEL_TANKD_LOW_RESERVE",
+          "title": "Aviation Day Tank D Capacity Dropped Below 50%",
+          "message": "Current capacity at 49.4% (22,250L). Reached predefined replenishment notification threshold.",
+          "aiDiagnosis": "Normal consumption draw from aviation fueling test cycle.",
+          "recommendedAction": "Initiate automated transfer pump PMP-02 from Bulk Tank A to replenish Tank D to 85%.",
+          "rootCauseProbability": 0.98,
+          "acknowledged": true,
+          "acknowledgedBy": "Cmdr. Ananya Rao"
+        },
+        {
+          "id": "ALT-9015",
+          "timestamp": "2026-08-28T22:10:00Z",
+          "severity": "NORMAL",
+          "subsystem": "Satellite Comms",
+          "code": "SAT_BEAM_HANDOVER_OK",
+          "title": "GSAT-7A Polar Transponder Handover Completed",
+          "message": "Elevation angle auto-tracked successfully to 14.8°. Ping stable at 612ms.",
+          "aiDiagnosis": "Routine orbital ephemeris compensation.",
+          "recommendedAction": "No action required.",
+          "rootCauseProbability": 0.99,
+          "acknowledged": true,
+          "acknowledgedBy": "System Auto"
+        },
+        {
+          "id": "ALT-8998",
+          "timestamp": "2026-08-28T16:04:30Z",
+          "severity": "CRITICAL",
+          "subsystem": "Meteorology",
+          "code": "BLIZZARD_ALERT_STAGE3",
+          "title": "Katabatic Storm Front Accelerated - Level 3 Alarm",
+          "message": "Barometric pressure gradient delta reached -4.1 hPa/3h. Wind gusts projected to reach 95 knots.",
+          "aiDiagnosis": "Polar low pressure vortex converging with continental slope air mass.",
+          "recommendedAction": "Enforce station lockdown protocol. Verify external heated safety tethers.",
+          "rootCauseProbability": 0.96,
+          "acknowledged": true,
+          "acknowledgedBy": "Dr. Rajeshwar Sharma"
+        }
+      ],
+      "prediction": {
+        "stormImpactForecast": {
+          "predictedPeakWindKnots": 94.5,
+          "predictedPeakTime": "2026-08-29T14:30:00Z",
+          "projectedOutdoorTempC": -48.2,
+          "simulatedHeatingDemandKw": 78.4,
+          "powerGridStressIndex": "HIGH (76/100)",
+          "solarContributionForecast": 0,
+          "windTurbineProductionForecastKw": 58
+        },
+        "fuelDepletionSimulation": [
+          {
+            "scenario": "Current Trend (Wind + Genset Alpha)",
+            "daysUntilDry": 225,
+            "safeReserveBreachDate": "2027-02-18",
+            "confidencePercent": 94
+          },
+          {
+            "scenario": "Extreme Katabatic Storm (Genset Alpha + Bravo)",
+            "daysUntilDry": 168,
+            "safeReserveBreachDate": "2026-12-14",
+            "confidencePercent": 88
+          },
+          {
+            "scenario": "Wind Turbine Failure Mode (Gensets Only)",
+            "daysUntilDry": 142,
+            "safeReserveBreachDate": "2026-11-18",
+            "confidencePercent": 91
+          }
+        ],
+        "componentDegradationRul": [
+          {
+            "component": "Genset 02 Journal Bearing B3",
+            "currentHealth": 79,
+            "rulOperatingHours": 180,
+            "failureProbability30d": 0.78,
+            "criticality": "CRITICAL"
+          },
+          {
+            "component": "Wind Turbine #3 Pitch Hydraulic Seal",
+            "currentHealth": 84,
+            "rulOperatingHours": 720,
+            "failureProbability30d": 0.32,
+            "criticality": "WARNING"
+          },
+          {
+            "component": "BESS Lithium Battery Bank Cells",
+            "currentHealth": 96.8,
+            "rulOperatingHours": 14000,
+            "failureProbability30d": 0.02,
+            "criticality": "NORMAL"
+          },
+          {
+            "component": "Trace Heating Line Alpha Cable",
+            "currentHealth": 91.2,
+            "rulOperatingHours": 4800,
+            "failureProbability30d": 0.08,
+            "criticality": "NORMAL"
+          }
+        ],
+        "hourlyForecast72h": [
+          {
+            "hour": "+0h",
+            "windKnots": 58,
+            "tempC": -42.8,
+            "powerKw": 146,
+            "fuelRateLph": 24.8,
+            "alarmRisk": "ELEVATED"
+          },
+          {
+            "hour": "+6h",
+            "windKnots": 74,
+            "tempC": -44.5,
+            "powerKw": 158,
+            "fuelRateLph": 26.2,
+            "alarmRisk": "HIGH"
+          },
+          {
+            "hour": "+12h",
+            "windKnots": 92,
+            "tempC": -47,
+            "powerKw": 172,
+            "fuelRateLph": 28.5,
+            "alarmRisk": "CRITICAL"
+          },
+          {
+            "hour": "+18h",
+            "windKnots": 88,
+            "tempC": -46.2,
+            "powerKw": 168,
+            "fuelRateLph": 27.8,
+            "alarmRisk": "CRITICAL"
+          },
+          {
+            "hour": "+24h",
+            "windKnots": 70,
+            "tempC": -43.8,
+            "powerKw": 154,
+            "fuelRateLph": 25.4,
+            "alarmRisk": "HIGH"
+          },
+          {
+            "hour": "+36h",
+            "windKnots": 52,
+            "tempC": -40.5,
+            "powerKw": 145,
+            "fuelRateLph": 24,
+            "alarmRisk": "MODERATE"
+          },
+          {
+            "hour": "+48h",
+            "windKnots": 42,
+            "tempC": -38.2,
+            "powerKw": 140,
+            "fuelRateLph": 23.2,
+            "alarmRisk": "LOW"
+          },
+          {
+            "hour": "+72h",
+            "windKnots": 34,
+            "tempC": -36,
+            "powerKw": 136,
+            "fuelRateLph": 22.5,
+            "alarmRisk": "LOW"
+          }
+        ]
+      },
+      "reports": {
+        "sitrep": {
+          "reportId": "SITREP-2026-0829-01",
+          "date": "29 August 2026",
+          "preparedBy": "Cmdr. Ananya Rao (Chief Engineer)",
+          "authorizedBy": "Dr. Rajeshwar Sharma (Station Commander)",
+          "stationStatus": "DEFCON-2 / BLIZZARD LEVEL 3",
+          "personnelAccountability": "24/24 Present & Accounted",
+          "lifeSupportStatus": "NOMINAL (HVAC O2: 20.9%, Temp: 21.2°C)",
+          "powerGridSummary": "Main Genset Alpha + 4x Micro-Wind supplying 146.8 kW total load.",
+          "fuelSummary": "134,250 Litres remaining (225.5 days buffer). Tank B active feed.",
+          "criticalIncidents": "Helipad De-icing circuit failure (isolated). Genset 2 bearing vibration monitored.",
+          "scientificOperations": "Magnetometer & Dobson ozone data transmitting to NCPOR Goa uninterrupted."
+        }
+      },
+      "settings": {
+        "pollingIntervalSeconds": 3,
+        "audioAlarmsEnabled": true,
+        "satelliteSyncMode": "OFFLINE_FIRST_CACHE",
+        "simulatedBandwidthKbps": 512,
+        "themeMode": "SCADA_DARK_STRICT",
+        "dataStreamSimulated": true,
+        "stationLockdown": false,
+        "operatorRole": "MISSION_CONTROLLER",
+        "lastCacheFlush": "2026-08-29T08:15:00Z"
+      }
+    },
+    "bharati": {
+      "station": {
+        "id": "STN-ANT-BHR",
+        "name": "Bharati Polar Research Station",
+        "code": "SIH26060-BHR",
+        "country": "India - NCPOR / MoES",
+        "coordinates": {
+          "latitude": "-69°24'27\" S",
+          "longitude": "76°11'43\" E",
+          "latDecimal": -69.4075,
+          "longDecimal": 76.1953,
+          "elevationMeters": 35.4,
+          "region": "Larsemann Hills, Princess Elizabeth Land, East Antarctica"
+        },
+        "season": "Austral Winter 2026",
+        "polarCycle": "Polar Night (0h Daylight)",
+        "timeZone": "UTC+05:00",
+        "crew": {
+          "totalOccupants": 28,
+          "stationCommander": "Ajit Yadav (Expedition 45)",
+          "chiefEngineer": "Cmdr. Ananya Rao",
+          "medicalOfficer": "Dr. Pradeep Nair",
+          "meteorologist": "Dr. Sneha Verma"
+        },
+        "telemetryLink": {
+          "satellite": "GSAT-7A High-Throughput Ka-Band",
+          "status": "NORMAL",
+          "latencyMs": 540,
+          "bandwidthKbps": 2048,
+          "signalQualityPercent": 98.6,
+          "lastSyncTimestamp": "2026-08-29T08:18:42Z"
+        },
+        "securityStatus": "NORMAL",
+        "lockdownActive": false
+      },
+      "weather": {
+        "current": {
+          "outdoorTempC": -36.2,
+          "indoorTempC": 22,
+          "windChillC": -52.4,
+          "windSpeedKnots": 44.2,
+          "windGustKnots": 62.8,
+          "windSpeedKmh": 81.9,
+          "windDirection": "ESE",
+          "windDirectionDeg": 112,
+          "barometricPressureHpa": 974.5,
+          "pressureTrend": "Steady (+0.2 hPa/3h)",
+          "humidityPercent": 54,
+          "visibilityMeters": 1200,
+          "blizzardAlert": {
+            "level": "WARNING",
+            "code": "BLIZZARD_LEVEL_2",
+            "title": "Drifting Coastal Snow Advisory",
+            "etaHours": 8,
+            "advisory": "Sea ice tracking radar active. High-visibility beacons engaged."
+          },
+          "uvIndex": 0,
+          "solarRadiationWm2": 0,
+          "geomagneticKp": 5.2,
+          "geomagneticStatus": "WARNING",
+          "auroraProbability": 84
+        },
+        "history24h": [
+          {
+            "time": "00:00",
+            "tempC": -32.4,
+            "windKnots": 28,
+            "pressureHpa": 982,
+            "windChillC": -44.2
+          },
+          {
+            "time": "02:00",
+            "tempC": -33.1,
+            "windKnots": 30,
+            "pressureHpa": 980.5,
+            "windChillC": -45.8
+          },
+          {
+            "time": "04:00",
+            "tempC": -34,
+            "windKnots": 34,
+            "pressureHpa": 979,
+            "windChillC": -47.9
+          },
+          {
+            "time": "06:00",
+            "tempC": -34.8,
+            "windKnots": 38,
+            "pressureHpa": 977.2,
+            "windChillC": -50.1
+          },
+          {
+            "time": "08:00",
+            "tempC": -35.5,
+            "windKnots": 41,
+            "pressureHpa": 976,
+            "windChillC": -51.5
+          },
+          {
+            "time": "10:00",
+            "tempC": -36,
+            "windKnots": 43,
+            "pressureHpa": 975,
+            "windChillC": -52
+          },
+          {
+            "time": "12:00",
+            "tempC": -36.2,
+            "windKnots": 44,
+            "pressureHpa": 974.5,
+            "windChillC": -52.4
+          }
+        ],
+        "forecast7Days": [
+          {
+            "day": "Today (D1)",
+            "highC": -40,
+            "lowC": -45,
+            "windKnots": 62,
+            "condition": "Blizzard / Katabatic Winds",
+            "status": "CRITICAL"
+          },
+          {
+            "day": "Day 2",
+            "highC": -38,
+            "lowC": -44,
+            "windKnots": 52,
+            "condition": "Drifting Snow",
+            "status": "WARNING"
+          },
+          {
+            "day": "Day 3",
+            "highC": -35,
+            "lowC": -41,
+            "windKnots": 36,
+            "condition": "Overcast Polar Skies",
+            "status": "NORMAL"
+          },
+          {
+            "day": "Day 4",
+            "highC": -34,
+            "lowC": -39,
+            "windKnots": 28,
+            "condition": "Clear Polar Night",
+            "status": "NORMAL"
+          },
+          {
+            "day": "Day 5",
+            "highC": -36,
+            "lowC": -42,
+            "windKnots": 32,
+            "condition": "Clear / High Aurora Kp",
+            "status": "NORMAL"
+          },
+          {
+            "day": "Day 6",
+            "highC": -39,
+            "lowC": -46,
+            "windKnots": 48,
+            "condition": "Katabatic Surge",
+            "status": "WARNING"
+          },
+          {
+            "day": "Day 7",
+            "highC": -41,
+            "lowC": -47,
+            "windKnots": 56,
+            "condition": "Blizzard Warning",
+            "status": "CRITICAL"
+          }
+        ]
+      },
+      "power": {
+        "overview": {
+          "totalLoadKw": 168.4,
+          "totalCapacityKw": 440,
+          "loadPercentage": 38.3,
+          "gridFrequencyHz": 50.02,
+          "busVoltageV": 402.1,
+          "powerFactor": 0.96,
+          "gridStatus": "NORMAL",
+          "bessSocPercent": 86.4,
+          "bessCapacityKwh": 600,
+          "bessCurrentKwh": 518.4,
+          "bessChargeRateKw": -14.5,
+          "bessHealthPercent": 96.8,
+          "bessCycleCount": 412
+        },
+        "sources": [
+          {
+            "id": "CAT-3406",
+            "name": "Genset Alpha CAT 3406",
+            "type": "Diesel",
+            "maxKw": 150,
+            "loadKw": 98.4,
+            "loadPercent": 65.6,
+            "fuelRateLph": 24.2,
+            "runningHours": 4120,
+            "status": "NORMAL"
+          },
+          {
+            "id": "CUMMINS-QSM",
+            "name": "Genset Bravo Cummins QSM11",
+            "type": "Diesel",
+            "maxKw": 150,
+            "loadKw": 0,
+            "loadPercent": 0,
+            "fuelRateLph": 0,
+            "runningHours": 2980,
+            "status": "STANDBY"
+          },
+          {
+            "id": "WIND-ARRAY",
+            "name": "Coastal Wind Turbine Matrix",
+            "type": "Wind",
+            "maxKw": 80,
+            "loadKw": 42,
+            "loadPercent": 52.5,
+            "fuelRateLph": 0,
+            "runningHours": 8400,
+            "status": "NORMAL"
+          },
+          {
+            "id": "SOLAR-PV",
+            "name": "Reflective Snow Bi-Facial PV",
+            "type": "Solar",
+            "maxKw": 60,
+            "loadKw": 28,
+            "loadPercent": 46.7,
+            "fuelRateLph": 0,
+            "runningHours": 1200,
+            "status": "NORMAL"
+          }
+        ],
+        "distributionCircuits": [
+          {
+            "id": "CKT-01",
+            "name": "Life Support & HVAC Heating",
+            "priority": "CRITICAL",
+            "currentKw": 64.2,
+            "capacityKw": 90,
+            "status": "NORMAL",
+            "breakerClosed": true
+          },
+          {
+            "id": "CKT-02",
+            "name": "Satellite & Comms Array",
+            "priority": "CRITICAL",
+            "currentKw": 16.4,
+            "capacityKw": 25,
+            "status": "NORMAL",
+            "breakerClosed": true
+          },
+          {
+            "id": "CKT-03",
+            "name": "Fuel Tank Thermal Tracing",
+            "priority": "CRITICAL",
+            "currentKw": 24.8,
+            "capacityKw": 35,
+            "status": "NORMAL",
+            "breakerClosed": true
+          },
+          {
+            "id": "CKT-04",
+            "name": "Atmospheric Science Lab",
+            "priority": "WARNING",
+            "currentKw": 28.6,
+            "capacityKw": 40,
+            "status": "NORMAL",
+            "breakerClosed": true
+          },
+          {
+            "id": "CKT-05",
+            "name": "Vehicle Workshop & Heavy Bay",
+            "priority": "WARNING",
+            "currentKw": 12.8,
+            "capacityKw": 30,
+            "status": "NORMAL",
+            "breakerClosed": true
+          },
+          {
+            "id": "CKT-06",
+            "name": "Helipad De-icing & Floodlights",
+            "priority": "CRITICAL",
+            "currentKw": 0,
+            "capacityKw": 20,
+            "status": "NORMAL",
+            "breakerClosed": false
+          }
+        ],
+        "history24h": [
+          {
+            "time": "00:00",
+            "gensetKw": 112,
+            "windKw": 24,
+            "solarKw": 0,
+            "bessKw": 10,
+            "totalDemand": 146
+          },
+          {
+            "time": "03:00",
+            "gensetKw": 108,
+            "windKw": 28,
+            "solarKw": 0,
+            "bessKw": 8,
+            "totalDemand": 144
+          },
+          {
+            "time": "06:00",
+            "gensetKw": 95,
+            "windKw": 42,
+            "solarKw": 0,
+            "bessKw": 5,
+            "totalDemand": 142
+          },
+          {
+            "time": "09:00",
+            "gensetKw": 88,
+            "windKw": 54,
+            "solarKw": 0,
+            "bessKw": 6,
+            "totalDemand": 148
+          },
+          {
+            "time": "12:00",
+            "gensetKw": 98.4,
+            "windKw": 48.4,
+            "solarKw": 0,
+            "bessKw": 0,
+            "totalDemand": 146.8
+          }
+        ]
+      },
+      "fuel": {
+        "summary": {
+          "totalCapacityLitres": 200000,
+          "totalCurrentLitres": 164200,
+          "overallPercent": 82.1,
+          "dailyBurnRateLitres": 580.4,
+          "daysRemaining": 282.9,
+          "winterTargetDays": 190,
+          "safeReserveThresholdLitres": 45000,
+          "fuelQualityStatus": "NORMAL",
+          "purityIndex": 99.4,
+          "lastRefuelDate": "2026-02-14 (R/V Maitri Voyage 44)"
+        },
+        "tanks": [
+          {
+            "id": "TANK-A",
+            "name": "Bulk Storage Alpha",
+            "fuelType": "Jet-A1 Polar Low-Freeze (-58°C)",
+            "capacityLitres": 45000,
+            "currentLitres": 38400,
+            "percentage": 85.3,
+            "temperatureC": -14.6,
+            "pressureBar": 1.14,
+            "ullageLitres": 6600,
+            "status": "NORMAL",
+            "pumpState": "STANDBY",
+            "leakDetected": false,
+            "traceHeaterActive": true
+          },
+          {
+            "id": "TANK-B",
+            "name": "Bulk Storage Bravo (Active Feed)",
+            "fuelType": "Jet-A1 Polar Low-Freeze (-58°C)",
+            "capacityLitres": 45000,
+            "currentLitres": 34100,
+            "percentage": 75.7,
+            "temperatureC": -15.1,
+            "pressureBar": 1.12,
+            "ullageLitres": 10900,
+            "status": "NORMAL",
+            "pumpState": "ACTIVE",
+            "leakDetected": false,
+            "traceHeaterActive": true
+          },
+          {
+            "id": "TANK-C",
+            "name": "Bulk Storage Charlie (Reserve)",
+            "fuelType": "Special Antarctic Diesel (SAD-90)",
+            "capacityLitres": 45000,
+            "currentLitres": 39500,
+            "percentage": 87.8,
+            "temperatureC": -16.2,
+            "pressureBar": 1.18,
+            "ullageLitres": 5500,
+            "status": "NORMAL",
+            "pumpState": "STANDBY",
+            "leakDetected": false,
+            "traceHeaterActive": true
+          },
+          {
+            "id": "TANK-D",
+            "name": "Aviation & Day Tank Delta",
+            "fuelType": "Jet-A1 Polar Low-Freeze (-58°C)",
+            "capacityLitres": 45000,
+            "currentLitres": 22250,
+            "percentage": 49.4,
+            "temperatureC": -12.4,
+            "pressureBar": 1.08,
+            "ullageLitres": 22750,
+            "status": "WARNING",
+            "pumpState": "STANDBY",
+            "leakDetected": false,
+            "traceHeaterActive": true
+          }
+        ],
+        "pumps": [
+          {
+            "id": "PMP-01",
+            "name": "Primary Feed Pump Alpha",
+            "sourceTank": "TANK-B",
+            "dest": "Genset Header 01",
+            "flowRateLpm": 42.5,
+            "pressurePsi": 58.4,
+            "status": "NORMAL"
+          },
+          {
+            "id": "PMP-02",
+            "name": "Inter-Tank Transfer Pump",
+            "sourceTank": "TANK-A",
+            "dest": "TANK-D",
+            "flowRateLpm": 0,
+            "pressurePsi": 0,
+            "status": "NORMAL"
+          },
+          {
+            "id": "PMP-03",
+            "name": "Emergency Recirculation Pump",
+            "sourceTank": "ALL",
+            "dest": "Thermal Loop",
+            "flowRateLpm": 0,
+            "pressurePsi": 0,
+            "status": "NORMAL"
+          }
+        ],
+        "consumptionHistory": [
+          {
+            "month": "Mar",
+            "consumedL": 17800,
+            "tempAvgC": -24,
+            "blizzardDays": 4
+          },
+          {
+            "month": "Apr",
+            "consumedL": 18200,
+            "tempAvgC": -32,
+            "blizzardDays": 6
+          },
+          {
+            "month": "May",
+            "consumedL": 19400,
+            "tempAvgC": -38,
+            "blizzardDays": 9
+          },
+          {
+            "month": "Jun",
+            "consumedL": 20800,
+            "tempAvgC": -41,
+            "blizzardDays": 12
+          },
+          {
+            "month": "Jul",
+            "consumedL": 21100,
+            "tempAvgC": -44,
+            "blizzardDays": 14
+          },
+          {
+            "month": "Aug (Current)",
+            "consumedL": 19100,
+            "tempAvgC": -43,
+            "blizzardDays": 11
+          }
+        ]
+      },
+      "digitalTwin": {
+        "stationBlueprint": {
+          "gridWidth": 960,
+          "gridHeight": 440,
+          "totalModules": 8,
+          "activePersonnelCount": 24,
+          "activeAlarmsCount": 2,
+          "structuralIntegrityScore": 98.4
+        },
+        "modules": [
+          {
+            "id": "MOD-BHR-HAB",
+            "name": "Stilted Architectural Habitat",
+            "code": "HAB-STILT",
+            "status": "Normal",
+            "statusType": "NORMAL",
+            "xPercent": 48,
+            "yPercent": 34,
+            "icon": "Building",
+            "tempC": 22,
+            "oxygenPercent": 21,
+            "occupancy": 20,
+            "powerDrawKw": 42.5,
+            "description": "Double-deck insulated modular container core elevated on hydraulic stilts to prevent snow drifting."
+          },
+          {
+            "id": "MOD-BHR-PWR",
+            "name": "Modular Powerhouse & BESS",
+            "code": "PWR-BESS",
+            "status": "Normal",
+            "statusType": "NORMAL",
+            "xPercent": 24,
+            "yPercent": 28,
+            "icon": "Zap",
+            "tempC": 25.1,
+            "occupancy": 2,
+            "powerDrawKw": 168.4,
+            "description": "Heavy diesel cogeneration units, waste heat recovery loop, and 600kWh LiFePO4 battery banks."
+          },
+          {
+            "id": "MOD-BHR-FUEL",
+            "name": "Larsemann Cryo Fuel Farm",
+            "code": "FUEL-FARM",
+            "status": "Normal",
+            "statusType": "NORMAL",
+            "xPercent": 64,
+            "yPercent": 32,
+            "icon": "Fuel",
+            "tempC": -12.4,
+            "occupancy": 0,
+            "powerDrawKw": 8.5,
+            "description": "Quadruple cylindrical vacuum tanks insulated for -60°C polar fuel storage."
+          },
+          {
+            "id": "MOD-BHR-COM",
+            "name": "Coastal GSAT-7A Radome",
+            "code": "COMMS-RAD",
+            "status": "Normal",
+            "statusType": "NORMAL",
+            "xPercent": 16,
+            "yPercent": 44,
+            "icon": "Radio",
+            "tempC": 19.5,
+            "occupancy": 1,
+            "powerDrawKw": 14.8,
+            "description": "Dual Ka-band tracking radomes maintaining real-time communication with NCPOR headquarters in Goa."
+          },
+          {
+            "id": "MOD-BHR-WTR",
+            "name": "Desalination & Intake Plant",
+            "code": "DESAL-WTR",
+            "status": "Normal",
+            "statusType": "NORMAL",
+            "xPercent": 23,
+            "yPercent": 55,
+            "icon": "Droplet",
+            "tempC": 6.2,
+            "occupancy": 0,
+            "powerDrawKw": 18.2,
+            "description": "Reverse osmosis sea water desalination and lake filtration system with heated conduits."
+          },
+          {
+            "id": "MOD-BHR-LOG",
+            "name": "Madrid Logistics & Staging",
+            "code": "LOG-STG",
+            "status": "Warning",
+            "statusType": "WARNING",
+            "xPercent": 46,
+            "yPercent": 56,
+            "icon": "Boxes",
+            "tempC": 1.5,
+            "occupancy": 1,
+            "powerDrawKw": 9.4,
+            "description": "Insulated container logistics depot housing winter survival supplies and expedition rations."
+          },
+          {
+            "id": "MOD-BHR-WRK",
+            "name": "Submersible ROV & Heavy Bay",
+            "code": "ROV-SHOP",
+            "status": "Normal",
+            "statusType": "NORMAL",
+            "xPercent": 68,
+            "yPercent": 58,
+            "icon": "Wrench",
+            "tempC": 14.2,
+            "occupancy": 3,
+            "powerDrawKw": 22,
+            "description": "Maintenance workshop for deep-sea oceanographic ROVs, PistenBully 300 Polar tractors, and snowcats."
+          }
+        ]
+      },
+      "inventory": [
+        {
+          "sku": "SP-HYD-041",
+          "name": "Cryogenic Fuel Filter Elements (5-Micron)",
+          "category": "Fuel System",
+          "quantity": 18,
+          "minThreshold": 12,
+          "unit": "Units",
+          "containerId": "CON-ALPHA-02",
+          "status": "NORMAL",
+          "shelfLifeDays": 720,
+          "criticality": "HIGH",
+          "supplier": "NCPOR Central Logistics Goa",
+          "airDropCompatible": true
+        },
+        {
+          "sku": "SP-GEN-109",
+          "name": "Cummins QSM11 Main Journal Bearings",
+          "category": "Power Generation",
+          "quantity": 2,
+          "minThreshold": 4,
+          "unit": "Sets",
+          "containerId": "CON-BRAVO-01",
+          "status": "CRITICAL",
+          "shelfLifeDays": 1800,
+          "criticality": "CRITICAL",
+          "supplier": "Cummins Marine Polar",
+          "airDropCompatible": true
+        },
+        {
+          "sku": "SP-HVC-201",
+          "name": "High-Efficiency Glycol Heat Transfer Fluid (Polar -60°C)",
+          "category": "Life Support / HVAC",
+          "quantity": 420,
+          "minThreshold": 300,
+          "unit": "Litres",
+          "containerId": "CON-ECHO-04",
+          "status": "NORMAL",
+          "shelfLifeDays": 1080,
+          "criticality": "HIGH",
+          "supplier": "Indian Oil Corporation",
+          "airDropCompatible": false
+        },
+        {
+          "sku": "SP-OXY-008",
+          "name": "Medical Grade Oxygen Cylinders (50L 200 Bar)",
+          "category": "Medical & Life Support",
+          "quantity": 14,
+          "minThreshold": 10,
+          "unit": "Cylinders",
+          "containerId": "MED-VAULT-01",
+          "status": "NORMAL",
+          "shelfLifeDays": 900,
+          "criticality": "HIGH",
+          "supplier": "MoES Medical Wing",
+          "airDropCompatible": false
+        },
+        {
+          "sku": "SP-WND-334",
+          "name": "Turbine Pitch Actuator Seals (Fluorosilicone)",
+          "category": "Power Generation",
+          "quantity": 4,
+          "minThreshold": 6,
+          "unit": "Packs",
+          "containerId": "CON-CHARLIE-03",
+          "status": "WARNING",
+          "shelfLifeDays": 640,
+          "criticality": "MEDIUM",
+          "supplier": "Vestas Arctic Tech",
+          "airDropCompatible": true
+        },
+        {
+          "sku": "SP-COM-512",
+          "name": "Ku-Band Low-Noise Block Downconverter (LNB)",
+          "category": "Satellite & Comms",
+          "quantity": 3,
+          "minThreshold": 2,
+          "unit": "Units",
+          "containerId": "RADOME-RACK-02",
+          "status": "NORMAL",
+          "shelfLifeDays": 1400,
+          "criticality": "HIGH",
+          "supplier": "ISRO Telemetry Depot",
+          "airDropCompatible": true
+        },
+        {
+          "sku": "SP-RAT-090",
+          "name": "Freeze-Dried High-Calorie Polar Ration Packs",
+          "category": "Provisions",
+          "quantity": 1450,
+          "minThreshold": 900,
+          "unit": "Meals",
+          "containerId": "FOOD-BUNKER-01",
+          "status": "NORMAL",
+          "shelfLifeDays": 480,
+          "criticality": "CRITICAL",
+          "supplier": "DFRL Mysore",
+          "airDropCompatible": true
+        },
+        {
+          "sku": "SP-VEH-088",
+          "name": "PistenBully Heavy Rubber-Steel Track Cleats",
+          "category": "Vehicles",
+          "quantity": 8,
+          "minThreshold": 12,
+          "unit": "Sections",
+          "containerId": "GARAGE-RACK-A",
+          "status": "WARNING",
+          "shelfLifeDays": 1200,
+          "criticality": "MEDIUM",
+          "supplier": "Kässbohrer Geländefahrzeug",
+          "airDropCompatible": false
+        },
+        {
+          "sku": "SP-ELE-772",
+          "name": "Schneider Electric 400A Molded Case Circuit Breaker",
+          "category": "Power Generation",
+          "quantity": 2,
+          "minThreshold": 2,
+          "unit": "Units",
+          "containerId": "CON-BRAVO-02",
+          "status": "NORMAL",
+          "shelfLifeDays": 2500,
+          "criticality": "HIGH",
+          "supplier": "Schneider India",
+          "airDropCompatible": true
+        },
+        {
+          "sku": "SP-WST-119",
+          "name": "MBR Filtration Membrane Cartridges",
+          "category": "Waste Treatment",
+          "quantity": 6,
+          "minThreshold": 4,
+          "unit": "Cartridges",
+          "containerId": "CON-ECHO-02",
+          "status": "NORMAL",
+          "shelfLifeDays": 900,
+          "criticality": "MEDIUM",
+          "supplier": "Thermax Environmental",
+          "airDropCompatible": true
+        }
+      ],
+      "alerts": [
+        {
+          "id": "ALT-9042",
+          "timestamp": "2026-08-29T08:14:10Z",
+          "severity": "CRITICAL",
+          "subsystem": "Helipad & AWS",
+          "code": "HELI_DEICE_FAIL_C3",
+          "title": "Helipad De-icing Element Group 3 Open Circuit",
+          "message": "Ground temperature sensor reporting ice accumulation on Helipad North Vector. De-icing relay R3-A tripped on overcurrent.",
+          "aiDiagnosis": "Possible cable sheath fracture due to -65°C wind chill stress or mechanical strain from PistenBully crossing.",
+          "recommendedAction": "Isolate breaker CKT-06. Dispatch technician team with thermal camera once blizzard subsides to Level 2.",
+          "rootCauseProbability": 0.89,
+          "acknowledged": false,
+          "acknowledgedBy": null
+        },
+        {
+          "id": "ALT-9039",
+          "timestamp": "2026-08-29T07:42:00Z",
+          "severity": "WARNING",
+          "subsystem": "Powerhouse (GEN-02)",
+          "code": "GEN2_BEARING_VIB_HIGH",
+          "title": "Genset 2 Front Journal Vibration Exceeded 4.5 mm/s",
+          "message": "Fast Fourier Transform spectral analysis detected 120Hz 2nd order harmonic peak on bearing sleeve B3.",
+          "aiDiagnosis": "Micro-fatigue pitting on upper bearing shell. RUL estimated at 180 operating hours before critical seizure.",
+          "recommendedAction": "Maintain GEN-02 on standby only. Prioritize GEN-01 and Wind Turbines. Schedule bearing swap from spare inventory SP-GEN-109.",
+          "rootCauseProbability": 0.94,
+          "acknowledged": false,
+          "acknowledgedBy": null
+        },
+        {
+          "id": "ALT-9028",
+          "timestamp": "2026-08-29T05:22:15Z",
+          "severity": "WARNING",
+          "subsystem": "Fuel Farm (TANK-D)",
+          "code": "FUEL_TANKD_LOW_RESERVE",
+          "title": "Aviation Day Tank D Capacity Dropped Below 50%",
+          "message": "Current capacity at 49.4% (22,250L). Reached predefined replenishment notification threshold.",
+          "aiDiagnosis": "Normal consumption draw from aviation fueling test cycle.",
+          "recommendedAction": "Initiate automated transfer pump PMP-02 from Bulk Tank A to replenish Tank D to 85%.",
+          "rootCauseProbability": 0.98,
+          "acknowledged": true,
+          "acknowledgedBy": "Cmdr. Ananya Rao"
+        },
+        {
+          "id": "ALT-9015",
+          "timestamp": "2026-08-28T22:10:00Z",
+          "severity": "NORMAL",
+          "subsystem": "Satellite Comms",
+          "code": "SAT_BEAM_HANDOVER_OK",
+          "title": "GSAT-7A Polar Transponder Handover Completed",
+          "message": "Elevation angle auto-tracked successfully to 14.8°. Ping stable at 612ms.",
+          "aiDiagnosis": "Routine orbital ephemeris compensation.",
+          "recommendedAction": "No action required.",
+          "rootCauseProbability": 0.99,
+          "acknowledged": true,
+          "acknowledgedBy": "System Auto"
+        },
+        {
+          "id": "ALT-8998",
+          "timestamp": "2026-08-28T16:04:30Z",
+          "severity": "CRITICAL",
+          "subsystem": "Meteorology",
+          "code": "BLIZZARD_ALERT_STAGE3",
+          "title": "Katabatic Storm Front Accelerated - Level 3 Alarm",
+          "message": "Barometric pressure gradient delta reached -4.1 hPa/3h. Wind gusts projected to reach 95 knots.",
+          "aiDiagnosis": "Polar low pressure vortex converging with continental slope air mass.",
+          "recommendedAction": "Enforce station lockdown protocol. Verify external heated safety tethers.",
+          "rootCauseProbability": 0.96,
+          "acknowledged": true,
+          "acknowledgedBy": "Dr. Rajeshwar Sharma"
+        }
+      ],
+      "prediction": {
+        "stormImpactForecast": {
+          "predictedPeakWindKnots": 94.5,
+          "predictedPeakTime": "2026-08-29T14:30:00Z",
+          "projectedOutdoorTempC": -48.2,
+          "simulatedHeatingDemandKw": 78.4,
+          "powerGridStressIndex": "HIGH (76/100)",
+          "solarContributionForecast": 0,
+          "windTurbineProductionForecastKw": 58
+        },
+        "fuelDepletionSimulation": [
+          {
+            "scenario": "Current Trend (Wind + Genset Alpha)",
+            "daysUntilDry": 225,
+            "safeReserveBreachDate": "2027-02-18",
+            "confidencePercent": 94
+          },
+          {
+            "scenario": "Extreme Katabatic Storm (Genset Alpha + Bravo)",
+            "daysUntilDry": 168,
+            "safeReserveBreachDate": "2026-12-14",
+            "confidencePercent": 88
+          },
+          {
+            "scenario": "Wind Turbine Failure Mode (Gensets Only)",
+            "daysUntilDry": 142,
+            "safeReserveBreachDate": "2026-11-18",
+            "confidencePercent": 91
+          }
+        ],
+        "componentDegradationRul": [
+          {
+            "component": "Genset 02 Journal Bearing B3",
+            "currentHealth": 79,
+            "rulOperatingHours": 180,
+            "failureProbability30d": 0.78,
+            "criticality": "CRITICAL"
+          },
+          {
+            "component": "Wind Turbine #3 Pitch Hydraulic Seal",
+            "currentHealth": 84,
+            "rulOperatingHours": 720,
+            "failureProbability30d": 0.32,
+            "criticality": "WARNING"
+          },
+          {
+            "component": "BESS Lithium Battery Bank Cells",
+            "currentHealth": 96.8,
+            "rulOperatingHours": 14000,
+            "failureProbability30d": 0.02,
+            "criticality": "NORMAL"
+          },
+          {
+            "component": "Trace Heating Line Alpha Cable",
+            "currentHealth": 91.2,
+            "rulOperatingHours": 4800,
+            "failureProbability30d": 0.08,
+            "criticality": "NORMAL"
+          }
+        ],
+        "hourlyForecast72h": [
+          {
+            "hour": "+0h",
+            "windKnots": 58,
+            "tempC": -42.8,
+            "powerKw": 146,
+            "fuelRateLph": 24.8,
+            "alarmRisk": "ELEVATED"
+          },
+          {
+            "hour": "+6h",
+            "windKnots": 74,
+            "tempC": -44.5,
+            "powerKw": 158,
+            "fuelRateLph": 26.2,
+            "alarmRisk": "HIGH"
+          },
+          {
+            "hour": "+12h",
+            "windKnots": 92,
+            "tempC": -47,
+            "powerKw": 172,
+            "fuelRateLph": 28.5,
+            "alarmRisk": "CRITICAL"
+          },
+          {
+            "hour": "+18h",
+            "windKnots": 88,
+            "tempC": -46.2,
+            "powerKw": 168,
+            "fuelRateLph": 27.8,
+            "alarmRisk": "CRITICAL"
+          },
+          {
+            "hour": "+24h",
+            "windKnots": 70,
+            "tempC": -43.8,
+            "powerKw": 154,
+            "fuelRateLph": 25.4,
+            "alarmRisk": "HIGH"
+          },
+          {
+            "hour": "+36h",
+            "windKnots": 52,
+            "tempC": -40.5,
+            "powerKw": 145,
+            "fuelRateLph": 24,
+            "alarmRisk": "MODERATE"
+          },
+          {
+            "hour": "+48h",
+            "windKnots": 42,
+            "tempC": -38.2,
+            "powerKw": 140,
+            "fuelRateLph": 23.2,
+            "alarmRisk": "LOW"
+          },
+          {
+            "hour": "+72h",
+            "windKnots": 34,
+            "tempC": -36,
+            "powerKw": 136,
+            "fuelRateLph": 22.5,
+            "alarmRisk": "LOW"
+          }
+        ]
+      },
+      "reports": {
+        "sitrep": {
+          "reportId": "SITREP-2026-0829-01",
+          "date": "29 August 2026",
+          "preparedBy": "Cmdr. Ananya Rao (Chief Engineer)",
+          "authorizedBy": "Dr. Rajeshwar Sharma (Station Commander)",
+          "stationStatus": "DEFCON-2 / BLIZZARD LEVEL 3",
+          "personnelAccountability": "24/24 Present & Accounted",
+          "lifeSupportStatus": "NOMINAL (HVAC O2: 20.9%, Temp: 21.2°C)",
+          "powerGridSummary": "Main Genset Alpha + 4x Micro-Wind supplying 146.8 kW total load.",
+          "fuelSummary": "134,250 Litres remaining (225.5 days buffer). Tank B active feed.",
+          "criticalIncidents": "Helipad De-icing circuit failure (isolated). Genset 2 bearing vibration monitored.",
+          "scientificOperations": "Magnetometer & Dobson ozone data transmitting to NCPOR Goa uninterrupted."
+        }
+      },
+      "settings": {
+        "pollingIntervalSeconds": 3,
+        "audioAlarmsEnabled": true,
+        "satelliteSyncMode": "OFFLINE_FIRST_CACHE",
+        "simulatedBandwidthKbps": 512,
+        "themeMode": "SCADA_DARK_STRICT",
+        "dataStreamSimulated": true,
+        "stationLockdown": false,
+        "operatorRole": "MISSION_CONTROLLER",
+        "lastCacheFlush": "2026-08-29T08:15:00Z"
+      }
+    }
+  },
+  "users": [
+    {
+      "id": "USR-001",
+      "name": "Ajit Yadav",
+      "email": "ajit.yadav@ncpor.res.in",
+      "role": "ANTARCTICA_EDGE",
+      "roleLabel": "Antarctica Edge User",
+      "title": "Station Commander (Expedition 45)",
+      "stationAccess": "ALL",
+      "activeStation": "bharati",
+      "lastActive": "2026-09-02T10:15:00Z",
+      "ipAddress": "192.168.1.10 - Local Polar LAN",
+      "location": "Bharati Station Base",
+      "avatarInitials": "AY"
+    },
+    {
+      "id": "USR-002",
+      "name": "Dr. Rajeshwar Sharma",
+      "email": "rajeshwar.sharma@ncpor.res.in",
+      "role": "ANTARCTICA_EDGE",
+      "roleLabel": "Antarctica Edge User",
+      "title": "Deputy Station Leader & Chief Scientist",
+      "stationAccess": "maitri",
+      "activeStation": "maitri",
+      "lastActive": "2026-09-02T09:48:00Z",
+      "ipAddress": "192.168.2.14 - Maitri Station LAN",
+      "location": "Maitri Habitat Core",
+      "avatarInitials": "RS"
+    },
+    {
+      "id": "USR-003",
+      "name": "Dr. Ananya Rao",
+      "email": "ananya.rao@ncpor.res.in",
+      "role": "INDIA_COMMAND",
+      "roleLabel": "India Command Center",
+      "title": "Director of Polar Operations (NCPOR)",
+      "stationAccess": "ALL",
+      "activeStation": "bharati",
+      "lastActive": "2026-09-02T10:18:22Z",
+      "ipAddress": "14.139.112.45 - Goa HQ Gateway",
+      "location": "NCPOR Head Office, Vasco da Gama, Goa",
+      "avatarInitials": "AR"
+    },
+    {
+      "id": "USR-004",
+      "name": "Cmdr. Vikram Malhotra",
+      "email": "vikram.m@moes.gov.in",
+      "role": "INDIA_COMMAND",
+      "roleLabel": "India Command Center",
+      "title": "MoES Logistics & Strategic Planning Director",
+      "stationAccess": "ALL",
+      "activeStation": "maitri",
+      "lastActive": "2026-09-02T08:30:10Z",
+      "ipAddress": "164.100.24.12 - MoES New Delhi",
+      "location": "Ministry of Earth Sciences, New Delhi",
+      "avatarInitials": "VM"
+    },
+    {
+      "id": "USR-005",
+      "name": "SysAdmin Cyber Cell",
+      "email": "admin.polar@nic.in",
+      "role": "SYSTEM_ADMIN",
+      "roleLabel": "System Admin",
+      "title": "Principal SCADA & Satellite Network Administrator",
+      "stationAccess": "ALL",
+      "activeStation": "bharati",
+      "lastActive": "2026-09-02T10:20:00Z",
+      "ipAddress": "10.0.4.1 - NIC Secure Operations Center",
+      "location": "NIC Central Ops, New Delhi",
+      "avatarInitials": "SA"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "AUD-1001",
+      "timestamp": "2026-09-02T10:20:14Z",
+      "userId": "USR-005",
+      "userName": "SysAdmin Cyber Cell",
+      "userRole": "SYSTEM_ADMIN",
+      "action": "LOGIN_SUCCESS",
+      "ipAddress": "10.0.4.1",
+      "location": "NIC Central Ops, New Delhi",
+      "details": "Authenticated via 2FA FIDO2 hardware key to Admin Console.",
+      "severity": "INFO"
+    },
+    {
+      "id": "AUD-1002",
+      "timestamp": "2026-09-02T10:18:22Z",
+      "userId": "USR-003",
+      "userName": "Dr. Ananya Rao",
+      "userRole": "INDIA_COMMAND",
+      "action": "LOGIN_SUCCESS",
+      "ipAddress": "14.139.112.45",
+      "location": "NCPOR HQ, Vasco da Gama, Goa",
+      "details": "Session opened for Read-Only Satellite Mirror feed (~12 min delay).",
+      "severity": "INFO"
+    },
+    {
+      "id": "AUD-1003",
+      "timestamp": "2026-09-02T10:15:00Z",
+      "userId": "USR-001",
+      "userName": "Ajit Yadav",
+      "userRole": "ANTARCTICA_EDGE",
+      "action": "LOGIN_SUCCESS",
+      "ipAddress": "192.168.1.10",
+      "location": "Bharati Station Base",
+      "details": "Station Commander signed on to primary SCADA control bus.",
+      "severity": "INFO"
+    },
+    {
+      "id": "AUD-1004",
+      "timestamp": "2026-09-02T09:55:40Z",
+      "userId": "USR-005",
+      "userName": "SysAdmin Cyber Cell",
+      "userRole": "SYSTEM_ADMIN",
+      "action": "ROLE_ASSIGNMENT",
+      "ipAddress": "10.0.4.1",
+      "location": "NIC Central Ops, New Delhi",
+      "details": "Updated user Dr. Rajeshwar Sharma permissions to Antarctica Edge Commander.",
+      "severity": "SECURITY"
+    },
+    {
+      "id": "AUD-1005",
+      "timestamp": "2026-09-02T09:12:00Z",
+      "userId": "USR-005",
+      "userName": "SysAdmin Cyber Cell",
+      "userRole": "SYSTEM_ADMIN",
+      "action": "SYNC_WINDOW_ADJUST",
+      "ipAddress": "10.0.4.1",
+      "location": "NIC Central Ops, New Delhi",
+      "details": "Adjusted GSAT-7A satellite store-and-forward batch window to 15 minutes.",
+      "severity": "INFO"
+    },
+    {
+      "id": "AUD-1006",
+      "timestamp": "2026-09-02T08:44:19Z",
+      "userId": "USR-001",
+      "userName": "Ajit Yadav",
+      "userRole": "ANTARCTICA_EDGE",
+      "action": "ALERT_ACKNOWLEDGED",
+      "ipAddress": "192.168.1.10",
+      "location": "Bharati Station Base",
+      "details": "Acknowledged warning on Larsemann Logistics Staging temperature sensor.",
+      "severity": "WARNING"
+    },
+    {
+      "id": "AUD-1007",
+      "timestamp": "2026-09-02T07:30:00Z",
+      "userId": "USR-004",
+      "userName": "Cmdr. Vikram Malhotra",
+      "userRole": "INDIA_COMMAND",
+      "action": "SUPPLY_PLAN_REVIEW",
+      "ipAddress": "164.100.24.12",
+      "location": "MoES New Delhi",
+      "details": "Exported Madrid Protocol winter ration burn rate forecast to MoES HQ.",
+      "severity": "INFO"
+    },
+    {
+      "id": "AUD-1008",
+      "timestamp": "2026-09-02T06:14:02Z",
+      "userId": "USR-002",
+      "userName": "Dr. Rajeshwar Sharma",
+      "userRole": "ANTARCTICA_EDGE",
+      "action": "DIESEL_GENSET_SWITCH",
+      "ipAddress": "192.168.2.14",
+      "location": "Maitri Habitat Core",
+      "details": "Initiated automated load transfer to Genset Alpha CAT 3406.",
+      "severity": "INFO"
+    }
+  ]
 }

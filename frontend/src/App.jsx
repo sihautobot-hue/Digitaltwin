@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { StationDataProvider } from './context/StationDataContext';
 import MainLayout from './components/layout/MainLayout';
+import ProtectedRoute from './components/common/ProtectedRoute';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import DigitalTwin from './pages/DigitalTwin';
@@ -13,6 +14,7 @@ import Alerts from './pages/Alerts';
 import Prediction from './pages/Prediction';
 import Reports from './pages/Reports';
 import SettingsPage from './pages/Settings';
+import Admin from './pages/Admin';
 
 export function App() {
   return (
@@ -35,6 +37,16 @@ export function App() {
             <Route path="/prediction" element={<Prediction />} />
             <Route path="/reports" element={<Reports />} />
             <Route path="/settings" element={<SettingsPage />} />
+            
+            {/* Role-Based Protected Admin Route */}
+            <Route
+              path="/admin"
+              element={
+                <ProtectedRoute requiredRole="SYSTEM_ADMIN">
+                  <Admin />
+                </ProtectedRoute>
+              }
+            />
           </Route>
 
           {/* Catch-all fallback */}
